@@ -1,3 +1,7 @@
+<script>
+
+</script>
+
 <header>
     <a href="kaanic.dev" class="logo">
         >_ KAANIC.DEV
@@ -53,6 +57,8 @@
         color: #e6e6e6;
 
         border: 3px solid #3a3f4f;
+
+        transition: all 0.3s ease;
     }
 
     .nav-link:hover {
