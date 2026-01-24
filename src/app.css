@@ -58,9 +58,9 @@ a {
   transition: opacity 0.3s ease;
 }
 
-a:hover {
+/* a:hover {
   opacity: 0.8;
-}
+} */
 
 button {
   font-family: inherit;
