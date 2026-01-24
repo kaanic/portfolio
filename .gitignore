@@ -1,3 +1,7 @@
+# Svelte
+.svelte-kit/
+.vercel/
+
 # Logs
 logs
 *.log
