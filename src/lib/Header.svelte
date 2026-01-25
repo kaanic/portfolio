@@ -37,7 +37,7 @@
         justify-content: space-between;
         align-items: center;
 
-        max-width: 1120px;
+        max-width: var(--contentMaxWidth);
         margin: 0 auto;
     }
 

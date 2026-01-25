@@ -6,8 +6,19 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Space Mono";
+  src: url('../public/fonts/SpaceMono-Regular.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   font-family:'Press Start 2P', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* content max width, to use on each section component */
+  --contentMaxWidth: 1120px;
 
   /* background colors */
   --bg: #0d1117;
@@ -83,6 +94,11 @@ button {
   padding: 0 2rem;
 } */
 
-section {
+.section {
   padding: 4rem 0;
+}
+
+.font-mono {
+  font-family: "Space Mono";
+  color: var(--textMuted);
 }
