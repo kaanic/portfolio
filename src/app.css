@@ -16,6 +16,10 @@
   /* needed for gradient channel */
   /* hex value cannot convert to rgbA so color-mix() is used */
   --bgTransparencyRatio: 95%; 
+
+  /* background pixels*/
+  --bgPixelSize: 8px;
+  --bgPixelOpacity: .3;
   
   /* text colors */
   --text: #e6e6e6;
