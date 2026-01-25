@@ -46,17 +46,13 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  font-family: var(--font-mono);
+  background-color: var(--bg);
   line-height: 1.6;
   overflow-x: hidden;
 }
 
 a {
-  color: var(--cyan);
   text-decoration: none;
-  transition: opacity 0.3s ease;
 }
 
 /* a:hover {

@@ -1,4 +1,5 @@
 <script>
+    import AnimatedBackground from "./lib/AnimatedBackground.svelte";
     import Header from "./lib/Header.svelte";
     import Main from "./lib/Main.svelte";
     import Stats from "./lib/Stats.svelte";
@@ -13,6 +14,7 @@
 </style>
 
 <div class="container">
+    <AnimatedBackground />
     <Header />
     <Main />
     <Stats />
