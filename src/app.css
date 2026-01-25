@@ -70,11 +70,11 @@ button {
   color: inherit;
 }
 
-.container {
-  max-width: 1400px;
+/* .container {
+  max-width: 1400px; 
   margin: 0 auto;
   padding: 0 2rem;
-}
+} */
 
 section {
   padding: 4rem 0;

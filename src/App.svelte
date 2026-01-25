@@ -12,9 +12,11 @@
 
 </style>
 
-<Header />
-<Main />
-<Stats />
-<Skills />
-<Projects />
-<Contact />
+<div class="container">
+    <Header />
+    <Main />
+    <Stats />
+    <Skills />
+    <Projects />
+    <Contact />
+</div>
