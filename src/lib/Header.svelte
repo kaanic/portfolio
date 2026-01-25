@@ -22,8 +22,8 @@
 <style>
     header {
         padding: 1.5rem 2rem;
-        background-color: #161b22;
-        border-bottom: 5px solid #58a6ff;
+        background-color: var(--cardBg);
+        border-bottom: 5px solid var(--borderAccent);
 
         position: sticky;
         top: 0;
@@ -42,14 +42,14 @@
     }
 
     .logo {
-        box-shadow: 5px 5px #58a6ff;
+        box-shadow: 5px 5px var(--borderAccent);
     }
 
     .logo, .theme-toggle {
-        background-color: #0d1117;
-        color: #e6e6e6;
+        background-color: var(--bg);
+        color: var(--text);
 
-        border: 5px solid #58a6ff;
+        border: 5px solid var(--borderAccent);
     }
 
     #navigation {
@@ -60,18 +60,18 @@
     }
 
     .nav-link {
-        background-color: #161b22;
-        color: #e6e6e6;
+        background-color: var(--cardBg);
+        color: var(--text);
 
-        border: 5px solid #3a3f4f;
+        border: 5px solid var(--border);
 
         transition: all 0.3s ease;
     }
 
     .nav-link:hover {
-        background-color: #58a6ff;
+        background-color: var(--borderAccent);
         color: #ffffff;
-        border-color: #58a6ff;
+        border-color: var(--borderAccent);
         box-shadow: 5px 5px #376091;
     }
 

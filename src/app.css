@@ -9,27 +9,28 @@
 :root {
   font-family:'Press Start 2P', Tahoma, Geneva, Verdana, sans-serif;
 
-  /* EXPERIMENTAL COLORS*/
-
-  /* dark theme colors */
-  --bg-primary: #0f1419;
-  --bg-secondary: #1a1f2e;
-  --bg-card: #1e2433;
+  /* background colors */
+  --bg: #0d1117;
+  --cardBg: #161b22;
   
   /* text colors */
-  --text-primary: #e6e6e6;
-  --text-secondary: #a0a0a0;
+  --text: #e6e6e6;
+  --textMuted: #8b949e;
   
   /* accent colors */
-  --cyan: #00d9ff;
-  --purple: #a855f7;
-  --pink: #ff0080;
-  --green: #00ff00;
-  --red: #ff3333;
+  --accent1: #ff4d94;
+  --accent2: #8b5cf6;
+  --accent3: #06b6d4;
   
   /* border colors */
-  --border-cyan: #00d9ff;
-  --border-blue: #1e40af;
+  --border: #30363d;
+  --borderAccent: #58a6ff;
+  
+  /* button colors */
+  --buttonPrimary: #238636;
+  --buttonPrimaryHover: #2ea043;
+  --buttonSecondary: #da3633;
+  --buttonSecondaryHover: #f85149;
 
 }
 
