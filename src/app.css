@@ -12,6 +12,10 @@
   /* background colors */
   --bg: #0d1117;
   --cardBg: #161b22;
+
+  /* needed for gradient channel */
+  /* hex value cannot convert to rgbA so color-mix() is used */
+  --bgTransparencyRatio: 95%; 
   
   /* text colors */
   --text: #e6e6e6;
@@ -52,7 +56,9 @@ body {
 }
 
 a {
+  /* color: var(--cyan); */
   text-decoration: none;
+  transition: opacity 0.3s ease;
 }
 
 /* a:hover {

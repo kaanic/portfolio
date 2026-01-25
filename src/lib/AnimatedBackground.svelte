@@ -5,6 +5,7 @@
 <div class="animated-bg">
     <div class="grid-bg"></div>
     <div class="scanline-bg"></div>
+    <div class="gradient-effect-bg"></div>
     
 </div>
 
@@ -70,6 +71,34 @@
             );
 
         animation: scanline 8s linear infinite;
+    }
+
+    .gradient-effect-bg {
+        position: absolute;
+
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        opacity: .2;
+
+        background: 
+            radial-gradient(
+                ellipse at top,
+                color-mix(in srgb, var(--accent2), transparent var(--bgTransparencyRatio)),
+                transparent 50%
+            ),
+            radial-gradient(
+                ellipse at bottom right,
+                color-mix(in srgb, var(--accent3), transparent var(--bgTransparencyRatio)),
+                transparent 50%
+            ),
+            radial-gradient(
+                ellipse at bottom left,
+                color-mix(in srgb, var(--accent1), transparent var(--bgTransparencyRatio)),
+                transparent 50%
+            );
     }
 
     @keyframes scanline {
