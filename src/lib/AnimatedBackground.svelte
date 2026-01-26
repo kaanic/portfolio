@@ -103,7 +103,8 @@
                 var(--border) 4px
             );
 
-        animation: scanline 8s linear infinite;
+        /* questionable optimization */
+        /* animation: scanline 8s linear infinite; */
     }
 
     .gradient-effect-bg {
