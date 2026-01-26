@@ -16,7 +16,7 @@
 
 :root {
   font-family:'Press Start 2P', Tahoma, Geneva, Verdana, sans-serif;
-
+  --secondaryFontFamily: "Space Mono";
   /* content max width, to use on each section component */
   --contentMaxWidth: 1120px;
 
@@ -31,6 +31,9 @@
   /* background pixels*/
   --bgPixelSize: 8px;
   --bgPixelOpacity: .3;
+
+  /* section title attr */
+  --sectionTitleFontSize: 1rem;
   
   /* text colors */
   --text: #e6e6e6;
@@ -99,6 +102,6 @@ button {
 }
 
 .font-mono {
-  font-family: "Space Mono";
+  font-family: var(--secondaryFontFamily);
   color: var(--textMuted);
 }

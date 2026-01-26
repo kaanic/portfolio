@@ -1,11 +1,12 @@
 <script>
-    import AnimatedBackground from "./lib/AnimatedBackground.svelte";
+    import AnimatedBackground from "./lib/components/AnimatedBackground.svelte";
     import Header from "./lib/Header.svelte";
     import Main from "./lib/Main.svelte";
     import Stats from "./lib/Stats.svelte";
     import Skills from "./lib/Skills.svelte";
     import Projects from "./lib/Projects.svelte";
     import Contact from "./lib/Contact.svelte";
+    import About from "./lib/About.svelte";
 
 </script>
 
@@ -17,6 +18,7 @@
     <AnimatedBackground />
     <Header />
     <Main />
+    <About />
     <Stats />
     <Skills />
     <Projects />
