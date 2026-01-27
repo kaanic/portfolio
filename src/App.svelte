@@ -18,8 +18,8 @@
     <AnimatedBackground />
     <Header />
     <Main />
-    <Stack />
     <About />
+    <Stack />
     <Projects />
     <Contact />
 </div>
