@@ -1,5 +1,15 @@
 <script>
+    import CategoryButton from './components/CategoryButton.svelte';
+    import { Code, Monitor, Server, Wrench } from 'lucide-svelte';
 
+    let activeCategory = $state('languages');
+
+    const categories = [
+        { id: 'languages', label: 'LANGUAGES', icon: Code },
+        { id: 'frontend', label: 'FRONTEND', icon: Monitor },
+        { id: 'backend', label: 'BACKEND', icon: Server },
+        { id: 'devops', label: 'DEVOPS', icon: Wrench }
+    ];
 </script>
 
 <div class="stack-container section">
@@ -9,8 +19,13 @@
         <div class="category-header">
             <div class="category-label">SELECT CLASS:</div>
             <div class="category-buttons">
-                <!-- svelte loop here -->
-                <!-- TODO: make a button component -->
+                {#each categories as category}
+                    <CategoryButton 
+                        {category}
+                        isActive={activeCategory === category.id}
+                        onclick={() => activeCategory = category.id}
+                    />
+                {/each}
             </div>
         </div>
 
@@ -127,7 +142,7 @@
     .proficiency-info {
         background-color: var(--bg);
         border: 2px solid var(--border);
-        
+
         padding: 1rem;
         margin-bottom: 2rem;
     }
