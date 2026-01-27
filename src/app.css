@@ -99,6 +99,8 @@ button {
 
 .section {
   padding: 4rem 0;
+  max-width: var(--contentMaxWidth);
+  margin: 0 auto;
 }
 
 .font-mono {

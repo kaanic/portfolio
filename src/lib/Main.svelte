@@ -23,9 +23,7 @@
 
 <style>
     .main-section {
-        max-width: var(--contentMaxWidth);
         min-height: 500px;
-        margin: 0 auto;
 
         display: flex;
         flex-direction: row;

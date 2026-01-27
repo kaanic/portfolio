@@ -13,7 +13,7 @@
     ];
 </script>
 
-<div class="about-container container">
+<div class="about-container section">
     <h1><span class="title-arrow">>></span> ABOUT_ME.TXT</h1>
     <div class="about-content">
         <div class="about-left-column about-info-box about-profile">
@@ -93,8 +93,6 @@
 
 <style>
     .about-container {
-        max-width: var(--contentMaxWidth);
-        margin: 0 auto;
         padding: 4rem 0rem;
     }
 
