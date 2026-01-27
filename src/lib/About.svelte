@@ -14,7 +14,7 @@
 </script>
 
 <div class="about-container section">
-    <h1><span class="title-arrow">>></span> ABOUT_ME.TXT</h1>
+    <h1 class="h1-title"><span class="title-arrow">>></span> ABOUT_ME.TXT</h1>
     <div class="about-content">
         <div class="about-left-column about-info-box about-profile">
             <div class="about-profile-header">
@@ -95,18 +95,7 @@
     .about-container {
         padding: 4rem 0rem;
     }
-
-    .about-container h1 {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-        
-        color: var(--text);
-    }
-
-    .about-container > h1 > .title-arrow {
-        color: var(--accent1);
-    }
-
+    
     .about-content {
         display: grid;
         /* 2/1 ratio */

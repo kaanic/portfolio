@@ -103,6 +103,17 @@ button {
   margin: 0 auto;
 }
 
+.h1-title {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    
+    color: var(--text);
+}
+
+.title-arrow {
+    color: var(--accent1);
+}
+
 .font-mono {
   font-family: var(--secondaryFontFamily);
   color: var(--textMuted);
