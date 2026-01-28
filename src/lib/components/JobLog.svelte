@@ -16,8 +16,8 @@
         </div>
 
         <div class="job-meta">
-            {#if job.status === "ACTIVE"}
             <span class="job-period">{job.period}</span>
+            {#if job.status === "ACTIVE"}
                 <div class="active-indicator">
                     <div class="active-dot"></div>
                     <span>ACTIVE</span>
