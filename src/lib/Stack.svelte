@@ -1,15 +1,52 @@
 <script>
     import CategoryButton from './components/CategoryButton.svelte';
+    import SkillCard from './components/SkillCard.svelte';
     import { Code, Monitor, Server, Wrench } from 'lucide-svelte';
-
-    let activeCategory = $state('languages');
-
+    
     const categories = [
         { id: 'languages', label: 'LANGUAGES', icon: Code },
         { id: 'frontend', label: 'FRONTEND', icon: Monitor },
         { id: 'backend', label: 'BACKEND', icon: Server },
         { id: 'devops', label: 'DEVOPS', icon: Wrench }
     ];
+    
+    const techStackCategories = {
+        languages: [
+            { name: 'JavaScript', proficiency: 'expert' },
+            { name: 'TypeScript', proficiency: 'advanced' },
+            { name: 'KaanScript', proficiency: 'intermediate' },
+            { name: 'GDscript', proficiency: 'expert' }
+        ],
+        frontend: [
+            { name: 'React', proficiency: 'advanced' },
+            { name: 'Svelte', proficiency: 'intermediate' },
+            { name: 'React Native', proficiency: 'beginner' },
+            { name: 'HTML/CSS', proficiency: 'expert' }
+        ],
+        backend: [
+            { name: 'Node.js', proficiency: 'advanced' },
+            { name: 'FastAPI', proficiency: 'advanced' },
+            { name: 'Flask', proficiency: 'intermediate' },
+            { name: 'MySQL', proficiency: 'intermediate' }
+        ],
+        devops: [
+            { name: 'Docker', proficiency: 'advanced' },
+            { name: 'Kubernetes', proficiency: 'beginner' },
+            { name: 'Azure', proficiency: 'intermediate' },
+            { name: 'Git', proficiency: 'expert' }
+        ]
+    };
+    
+    let activeCategory = $state('languages');
+
+    const currentSkills = $derived(techStackCategories[activeCategory]);
+
+    const stats = $derived({
+        total: currentSkills.length,
+        expert: currentSkills.filter(s => s.proficiency === 'expert').length,
+        advanced: currentSkills.filter(s => s.proficiency === 'advanced').length,
+        intermediate: currentSkills.filter(s => s.proficiency === 'intermediate').length
+    });
 </script>
 
 <div class="stack-container section">
@@ -81,25 +118,27 @@
         </div>
 
         <div class="skills-grid">
-            <!-- TODO: make a component to loop -->
+            {#each currentSkills as skill}
+                <SkillCard {skill} />
+            {/each}
         </div> 
 
         <div class="stats-footer">
             <div class="stats-left">
-                TOTAL_ITEMS: 5
+                TOTAL_ITEMS: {stats.total}
             </div>
             <div class="stats-right">
                 <div class="stat-item">
                     <span class="stat-label">EXPERT:</span>
-                    <span class="stat-value">1</span>
+                    <span class="stat-value">{stats.expert}</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-label">ADVANCED:</span>
-                    <span class="stat-value">2</span>
+                    <span class="stat-value">{stats.advanced}</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-label">INTERMEDIATE:</span>
-                    <span class="stat-value">3</span>
+                    <span class="stat-value">{stats.intermediate}</span>
                 </div>
             </div>
         </div>
@@ -231,6 +270,13 @@
     .info-desc {
         font-size: .6rem;
         color: var(--textMuted);
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2rem;
     }
 
     .stats-footer {
