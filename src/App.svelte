@@ -17,7 +17,7 @@
     <Main />
     <About />
     <Stack />
-    <Career />
     <Projects />
+    <Career />
     <Contact />
 </div>
