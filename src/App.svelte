@@ -7,6 +7,7 @@
     import Stack from "./lib/Stack.svelte";
     import Projects from "./lib/Projects.svelte";
     import Contact from "./lib/Contact.svelte";
+    import Career from "./lib/Career.svelte";
 
 </script>
 
@@ -20,6 +21,7 @@
     <Main />
     <About />
     <Stack />
+    <Career />
     <Projects />
     <Contact />
 </div>
