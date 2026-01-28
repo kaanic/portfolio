@@ -16,13 +16,13 @@
         </div>
 
         <div class="job-meta">
-            <span class="job-period">{job.period}</span>
             {#if job.status === "ACTIVE"}
                 <div class="active-indicator">
                     <div class="active-dot"></div>
                     <span>ACTIVE</span>
                 </div>
             {/if}
+            <span class="job-period">{job.period}</span>
         </div>
     </div>
 
@@ -120,7 +120,8 @@
         font-size: .75rem;
         color: var(--accent1);
 
-        gap: .25rem;
+        gap: .5rem;
+        margin-right: .75rem;
     }
 
     .active-dot {
