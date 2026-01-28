@@ -120,12 +120,39 @@
     }
 
     .scanline-layer {
-        /* TODO */
-        /* add transitions too */
+        position: absolute;
+        inset: 0;
+
+        opacity: .2;
+        background-size: 100% 4px;
+        background: repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            var(--border) 2px,
+            var(--border) 4px
+        );
+
+        pointer-events: none;
     }
 
     .glow-layer {
-        /* TODO */
+        position: absolute;
+        inset: 0;
+        
+        opacity: 0;
+        background: radial-gradient(
+            circle at center,
+            color-mix(in srgb, var(--accent2), transparent 60%),
+            transparent 70%
+        );
+        transition: all .3 ease;
+
+        pointer-events: none;
+    }
+
+    .project-card:hover .glow-layer {
+        opacity: .3;
     }
 
     .project-content {
