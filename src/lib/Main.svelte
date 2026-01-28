@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <div class="main-section section">
     <div class="main-left-column">
         <div class="title">

@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <header>
     <div class="header-content">
         <a href="kaanic.dev" class="logo">

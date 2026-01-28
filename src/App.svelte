@@ -11,10 +11,6 @@
 
 </script>
 
-<style>
-
-</style>
-
 <div class="container">
     <AnimatedBackground />
     <Header />
