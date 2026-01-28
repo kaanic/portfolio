@@ -1,6 +1,14 @@
 <script>
     import ProjectCard from "./components/ProjectCard.svelte";
 
+    // test
+    const project = {
+            title: 'GAME ENGINE',
+            desc: 'Custom 2D game engine built from scratch',
+            tech: ['C++', 'OpenGL', 'SDL'],
+            status: 'IN PROGRESS',
+            image: 'https://opengl.bassi.li/devlog/lesson-6-shading.png'
+        }
 </script>
 
 <div class="projects-container section">
@@ -8,7 +16,7 @@
 
     <div class="projects-grid">
         <!-- to be looped -->
-         <ProjectCard />
+         <ProjectCard {project}/>
     </div>
 
     <div class="show-more">
