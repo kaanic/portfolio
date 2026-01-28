@@ -80,7 +80,7 @@
     .project-image-container {
         position: relative;
         overflow: hidden;
-        height: 280px;
+        height: 240px;
 
         border-bottom: 5px solid var(--border);
     }
