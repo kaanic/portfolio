@@ -78,7 +78,17 @@
 
         background-color: var(--bg);
         color: var(--accent1);
+        animation: blink 1.5s steps(2) infinite;
 
         font-size: .75rem;
+    }
+
+    @keyframes blink {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: .5;
+        }
     }
 </style>
