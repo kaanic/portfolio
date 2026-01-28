@@ -69,6 +69,7 @@
         box-shadow: 8px 8px color-mix(in srgb, var(--borderAccent), transparent 80%);
 
         cursor: pointer;
+        transition: all .3s ease;
     }
 
     .project-card:hover {
@@ -226,6 +227,7 @@
         background-color: var(--bg);
 
         cursor: pointer;
+        transition: all .3s ease;
     }
 
     .btn-demo {
