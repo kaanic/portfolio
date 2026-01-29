@@ -8,6 +8,7 @@
     import Projects from "./lib/Projects.svelte";
     import Contact from "./lib/Contact.svelte";
     import Career from "./lib/Career.svelte";
+    import Footer from "./lib/Footer.svelte";
 
 </script>
 
@@ -20,4 +21,5 @@
     <Projects />
     <Career />
     <Contact />
+    <Footer />
 </div>
