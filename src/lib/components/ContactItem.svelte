@@ -10,7 +10,7 @@
     </div>
     <div class="contact-text">
         <span class="contact-type">{type}</span>
-        <span clasS="contact-address">{address}</span>
+        <span class="contact-address">{address}</span>
     </div>
 </div>
 
