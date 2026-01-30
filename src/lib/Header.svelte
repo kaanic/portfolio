@@ -1,3 +1,12 @@
+<script>
+    import { Sun, Moon } from "lucide-svelte";
+
+    let isDarkMode = true;
+
+    // TODO: make actual function
+    function toggleTheme() { isDarkMode = !isDarkMode; };
+</script>
+
 <header>
     <div class="header-content">
         <a href="kaanic.dev" class="logo">
@@ -9,8 +18,13 @@
             <a href="#skills" class="nav-link">SKILLS</a>
             <a href="#contact" class="nav-link">CONTACT</a>
         </nav>
-        <button class="theme-toggle" aria-label="Toggle theme">
-            <!-- placeholder for sun/moon icons -->O
+        <button class="theme-toggle" aria-label="Toggle theme" on:click={toggleTheme}>
+            <!-- functionality to be implemented -->
+            {#if isDarkMode}
+                <Sun size={20} />
+            {:else}
+                <Moon size={20} />
+            {/if}
         </button>
     </div>
 </header>
