@@ -22,6 +22,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        flex-wrap: wrap;
 
         gap: 1rem;
         padding: 1rem 0;
