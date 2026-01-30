@@ -19,7 +19,7 @@
         display: flex;
         flex-direction: row;
 
-        background-color: black; /* change later */
+        background-color: var(--bg);
         border: 4px solid var(--accent2);
 
         padding: .75rem .25rem;
