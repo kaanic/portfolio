@@ -63,7 +63,7 @@
 
             <div class="about-achievement about-info-box">
                 <div class="achievement-content">
-                    <div class="achievement-icon"><Trophy size={48}/></div>
+                    <div class="achievement-icon"><Trophy size={32}/></div>
                     <div class="achievement-text">ACHIEVEMENT UNLOCKED</div>
                     <div class="achievement-title">INDIE ENJOYER</div>
                     <div class="achievement-badge">★ UNCOMMON ★</div>
@@ -227,7 +227,7 @@
     }
 
     .achievement-title {
-        font-size: 1.25rem;
+        font-size: 1rem;
         color: var(--accent2);
     }
 
