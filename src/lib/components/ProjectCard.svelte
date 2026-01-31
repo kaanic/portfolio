@@ -49,8 +49,25 @@
 
         <!-- TODO: if code or demo doesnt exist, grey it out -->
         <div class="action-buttons">
-            <button class="btn-demo">VIEW DEMO</button>
-            <button class="btn-code">&lt;/&gt; CODE</button>
+            <button 
+                class="btn-demo"
+                class:disabled={!project.demoUrl}
+                disabled={!project.demoUrl}
+                aria-disabled={!project.demoUrl}
+                onclick={() => project.demoUrl && window.open(project.demoUrl, "_blank")}
+            >
+                VIEW DEMO
+            </button>
+
+            <button 
+                class="btn-code"
+                class:disabled={!project.codeUrl}
+                disabled={!project.codeUrl}
+                aria-disabled={!project.codeUrl}
+                onclick={() => project.codeUrl && window.open(project.codeUrl, "_blank")}
+            >
+                &lt;/&gt; CODE
+            </button>
         </div>
     </div>
     
@@ -255,6 +272,20 @@
 
         cursor: pointer;
         transition: all .3s ease;
+    }
+
+    .action-buttons button.disabled {
+        opacity: .4;
+        filter: grayscale();
+
+        box-shadow: none;
+
+        cursor: not-allowed;
+    }
+
+    .action-buttons button.disabled:hover {
+        transform: none;
+        box-shadow: none;
     }
 
     .btn-demo {
