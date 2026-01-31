@@ -1,16 +1,8 @@
 <script>
     import InfoItem from './components/InfoItem.svelte';
     
-    // first three  are for .about-right-column
-    // other ones   are for .mini-info-container
-    import { Zap, Gamepad2, Trophy, MapPin, GraduationCap, Briefcase, Code } from 'lucide-svelte';
-
-    const miniInfo = [
-        { icon: MapPin, label: "LOCATION", value: "Kanta-Häme, Finland"},
-        { icon: GraduationCap, label: "EDUCATION", value: "Computer Applications"},
-        { icon: Briefcase, label: "CURRENT_ROLE", value: "Student Assistant"},
-        { icon: Code, label: "FAV_LANGUAGE", value: "C#"},
-    ];
+    import { Zap, Gamepad2, Trophy } from 'lucide-svelte';
+    import { miniInfo } from '$lib/data'
 </script>
 
 <div class="about-container section">
