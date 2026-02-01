@@ -89,7 +89,7 @@
     .theme-toggle {
         box-shadow: 5px 5px color-mix(in srgb, var(--borderAccent), transparent 80%);
         cursor: pointer;
-        transition: all .3 ease;
+        transition: all .3s ease;
     }
 
     .theme-toggle:hover {
