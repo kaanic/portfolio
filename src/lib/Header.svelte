@@ -1,10 +1,8 @@
 <script>
     import { Sun, Moon } from "lucide-svelte";
+    import { getIsDarkMode, toggleTheme } from "../themeStore.svelte";
 
-    let isDarkMode = true;
-
-    // TODO: make actual function
-    function toggleTheme() { isDarkMode = !isDarkMode; };
+    let isDarkMode = $derived(getIsDarkMode());
 </script>
 
 <header>
@@ -18,8 +16,7 @@
             <a href="#skills" class="nav-link">SKILLS</a>
             <a href="#contact" class="nav-link">CONTACT</a>
         </nav>
-        <button class="theme-toggle" aria-label="Toggle theme" on:click={toggleTheme}>
-            <!-- functionality to be implemented -->
+        <button class="theme-toggle" aria-label="Toggle theme" onclick={toggleTheme}>
             {#if isDarkMode}
                 <Sun size={20} />
             {:else}
@@ -75,14 +72,14 @@
 
         border: 5px solid var(--border);
 
-        transition: all 0.3s ease;
+        transition: all .3s ease;
     }
 
     .nav-link:hover {
         background-color: var(--borderAccent);
         color: #ffffff;
         border-color: var(--borderAccent);
-        box-shadow: 5px 5px #376091;
+        box-shadow: 5px 5px color-mix(in srgb, var(--borderAccent), transparent 80%);
     }
 
     .logo, .nav-link, .theme-toggle {
@@ -90,6 +87,13 @@
     }
 
     .theme-toggle {
-        box-shadow: 5px 5px #376091;
+        box-shadow: 5px 5px color-mix(in srgb, var(--borderAccent), transparent 80%);
+        cursor: pointer;
+        transition: all .3 ease;
+    }
+
+    .theme-toggle:hover {
+        transform: translate(2px, 2px);
+        box-shadow: 3px 3px color-mix(in srgb, var(--borderAccent), transparent 80%);
     }
 </style>

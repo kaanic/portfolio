@@ -1,4 +1,6 @@
 <script>
+    import { onMount } from "svelte";
+    import { initializeTheme } from "./themeStore.svelte";
     import AnimatedBackground from "./lib/components/AnimatedBackground.svelte";
 
     import Header from "./lib/Header.svelte";
@@ -10,6 +12,9 @@
     import Career from "./lib/Career.svelte";
     import Footer from "./lib/Footer.svelte";
 
+    onMount(() => {
+        initializeTheme();
+    });
 </script>
 
 <div class="container">
