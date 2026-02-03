@@ -10,9 +10,9 @@
         <p class="font-mono">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta enim dolor, quae at doloribus.</p>
 
         <div class="contact-items">
-            <ContactItem Icon={Mail} type={"EMAIL"} address={"kaanic1337@gmail.com"}/>
-            <ContactItem Icon={Linkedin} type={"LINKEDIN"} address={"linked.in/kaanic"}/>
-            <ContactItem Icon={Github} type={"GITHUB"} address={"github.com/kaanic"}/>
+            <ContactItem Icon={Mail} type={"EMAIL"} address={"kaanic1337@gmail.com"} url={"google.com"}/>
+            <ContactItem Icon={Linkedin} type={"LINKEDIN"} address={"linked.in/kaanic"} url={"google.com"}/> <!-- placeholder urls -->
+            <ContactItem Icon={Github} type={"GITHUB"} address={"github.com/kaanic"} url={"google.com"}/>
         </div>
     </div>
 </div>
