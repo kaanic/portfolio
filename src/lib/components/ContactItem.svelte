@@ -30,9 +30,6 @@
         justify-content: center;
 
         width: 48px;
-    }
-
-    .contact-type-icon {
         color: var(--accent2);
     }
 
