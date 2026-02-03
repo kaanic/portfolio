@@ -1,6 +1,6 @@
 <script>
-    import { Github, Mail, Linkedin } from "lucide-svelte";
     import ContactItem from "./components/ContactItem.svelte";
+    import { contacts } from "$lib/data";
 </script>
 
 <div class="contact-container section">
@@ -10,9 +10,14 @@
         <p class="font-mono">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta enim dolor, quae at doloribus.</p>
 
         <div class="contact-items">
-            <ContactItem Icon={Mail} type={"EMAIL"} address={"kaanic1337@gmail.com"} url={"google.com"}/>
-            <ContactItem Icon={Linkedin} type={"LINKEDIN"} address={"linked.in/kaanic"} url={"google.com"}/> <!-- placeholder urls -->
-            <ContactItem Icon={Github} type={"GITHUB"} address={"github.com/kaanic"} url={"google.com"}/>
+            {#each contacts as contact}
+                <ContactItem 
+                    Icon={contact.icon} 
+                    type={contact.type} 
+                    address={contact.address} 
+                    url={contact.url}
+                />
+            {/each}
         </div>
     </div>
 </div>
