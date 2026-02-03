@@ -18,7 +18,7 @@
   font-family:'Press Start 2P', Tahoma, Geneva, Verdana, sans-serif;
   --secondaryFontFamily: "Space Mono";
   /* content max width, to use on each section component */
-  --contentMaxWidth: 1120px;
+  --contentMaxWidth: min(90%, 1120px);
 
   /* background colors */
   --bg: #0d1117;
