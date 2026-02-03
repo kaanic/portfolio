@@ -1,6 +1,4 @@
 <script>
-    import { Proportions } from "lucide-svelte";
-
     let { Icon, type, address } = $props();
 </script>
 
