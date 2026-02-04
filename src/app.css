@@ -14,9 +14,17 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Roboto Mono";
+  src: url('/fonts/RobotoMono.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   font-family:'Press Start 2P', Tahoma, Geneva, Verdana, sans-serif;
-  --secondaryFontFamily: "Space Mono";
+  --secondaryFontFamily: "Roboto Mono";
   /* content max width, to use on each section component */
   --contentMaxWidth: min(90%, 1120px);
 
