@@ -37,7 +37,7 @@
             <Code size={16} class="code-icon" />
         </div>
 
-        <p class="project-desc font-mono">
+        <p class="project-desc font-secondary">
             {project.desc}
         </p>
 

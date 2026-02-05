@@ -7,7 +7,7 @@
     <h1 class="h1-title"><span class="title-arrow">>></span> CONTACT.INI</h1>
 
     <div class="contact-content">
-        <p class="font-mono">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta enim dolor, quae at doloribus.</p>
+        <p class="font-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta enim dolor, quae at doloribus.</p>
 
         <div class="contact-items">
             {#each contacts as contact}

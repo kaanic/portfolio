@@ -14,15 +14,15 @@
             </div>
             
             <div class="about-paragraphs">
-                <p class="profile-text font-mono">
+                <p class="profile-text font-secondary">
                     Hello! I'm Kaan, lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vero iste, incidunt quos, quo eos est excepturi enim sequi, ad dolore temporibus doloremque quae harum doloribus reiciendis magni tenetur. Laboriosam?
                 </p>
                 
-                <p class="profile-text font-mono">
+                <p class="profile-text font-secondary">
                     Hello! I'm Kaan, lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vero iste, incidunt quos, quo eos est excepturi enim sequi, ad dolore temporibus doloremque quae harum doloribus reiciendis magni tenetur. Laboriosam?
                 </p>
                 
-                <p class="profile-text font-mono">
+                <p class="profile-text font-secondary">
                     Hello! I'm Kaan, lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vero iste, incidunt quos, quo eos est excepturi enim sequi, ad dolore temporibus doloremque quae harum doloribus reiciendis magni tenetur. Laboriosam?
                 </p>
             </div>
