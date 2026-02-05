@@ -66,7 +66,6 @@
 
     .main-title-name {
         font-size: 2.5rem;
-        font-weight: 400;
         line-height: 1.2;
 
         color: var(--text);
