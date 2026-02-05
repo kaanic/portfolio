@@ -67,6 +67,7 @@
     .main-title-name {
         font-size: 2.5rem;
         line-height: 1.2;
+        margin: .5rem 0;
 
         color: var(--text);
     }
@@ -88,9 +89,9 @@
     }
 
     .main-desc {
-        font-size: .85rem;
+        font-size: 1rem;
         line-height: 1.6;
-        max-width: 70ch;
+        max-width: 85%;
     }
 
     .main-buttons {
