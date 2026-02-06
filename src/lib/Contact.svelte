@@ -4,7 +4,7 @@
 </script>
 
 <div class="contact-container section">
-    <h1 class="h1-title"><span class="title-arrow">>></span> CONTACT.INI</h1>
+    <h1 class="h1-title"><span class="title-arrow">>></span> CONTACT.EXE</h1>
 
     <div class="contact-content">
         <p class="font-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta enim dolor, quae at doloribus.</p>

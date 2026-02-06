@@ -4,7 +4,7 @@
 </script>
 
 <div class="career-container section">
-    <h1 class="h1-title"><span class="title-arrow">>></span> CAREER_LOG.DAT</h1>
+    <h1 class="h1-title"><span class="title-arrow">>></span> CAREER_HISTORY.LOG</h1>
     <div class="career-item-container">
         {#each experiences as job}
             <JobLog {job} />
