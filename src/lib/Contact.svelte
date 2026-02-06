@@ -7,7 +7,7 @@
     <h1 class="h1-title"><span class="title-arrow">>></span> CONTACT.EXE</h1>
 
     <div class="contact-content">
-        <p class="font-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta enim dolor, quae at doloribus.</p>
+        <p class="font-secondary">You can contact me through these methods any time of the day!</p>
 
         <div class="contact-items">
             {#each contacts as contact}
@@ -42,6 +42,6 @@
     }
 
     .contact-content > p {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 </style>
