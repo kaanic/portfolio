@@ -57,7 +57,7 @@
                 <div class="achievement-content">
                     <div class="achievement-icon"><Trophy size={32}/></div>
                     <div class="achievement-text">ACHIEVEMENT UNLOCKED</div>
-                    <div class="achievement-title">CERTIFIED ENJOYABLE</div>
+                    <div class="achievement-title">CERTIFIED ENJOYER</div>
                     <div class="achievement-badge">★ UNCOMMON ★</div>
                 </div>
             </div>

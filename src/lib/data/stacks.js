@@ -4,32 +4,38 @@ export const categories = [
     { id: 'languages', label: 'LANGUAGES', icon: Code },
     { id: 'frontend', label: 'FRONTEND', icon: Monitor },
     { id: 'backend', label: 'BACKEND', icon: Server },
-    { id: 'devops', label: 'DEVOPS', icon: Wrench }
+    { id: 'other', label: 'OTHER', icon: Wrench }
 ];
 
 export const techStackCategories = {
     languages: [
-        { name: 'JavaScript', proficiency: 'expert' },
-        { name: 'TypeScript', proficiency: 'advanced' },
-        { name: 'KaanScript', proficiency: 'intermediate' },
-        { name: 'GDscript', proficiency: 'expert' }
+        { name: 'C', proficiency: 'beginner' },
+        { name: 'C#', proficiency: 'intermediate' },
+        { name: 'GDscript', proficiency: 'expert' },
+        { name: 'JavaScript', proficiency: 'advanced' },
+        { name: 'PHP', proficiency: 'beginner' },
+        { name: 'Python', proficiency: 'advanced' }
     ],
     frontend: [
+        { name: 'Astro', proficiency: 'beginner' },
+        { name: 'HTML/CSS', proficiency: 'expert' },
         { name: 'React', proficiency: 'advanced' },
-        { name: 'Svelte', proficiency: 'intermediate' },
-        { name: 'React Native', proficiency: 'beginner' },
-        { name: 'HTML/CSS', proficiency: 'expert' }
+        { name: 'React Native', proficiency: 'intermediate' },
+        { name: 'Svelte', proficiency: 'advanced' },
+        { name: 'Vue', proficiency: 'beginner' }
     ],
     backend: [
+        { name: 'Django', proficiency: 'beginner' },
+        { name: 'MySQL', proficiency: 'advanced' },
         { name: 'Node.js', proficiency: 'advanced' },
-        { name: 'FastAPI', proficiency: 'advanced' },
-        { name: 'Flask', proficiency: 'intermediate' },
-        { name: 'MySQL', proficiency: 'intermediate' }
+        { name: 'RestAPI', proficiency: 'intermediate' },
     ],
-    devops: [
-        { name: 'Docker', proficiency: 'advanced' },
-        { name: 'Kubernetes', proficiency: 'beginner' },
+    other: [
         { name: 'Azure', proficiency: 'intermediate' },
-        { name: 'Git', proficiency: 'expert' }
+        { name: 'Docker', proficiency: 'intermediate' },
+        { name: 'Git', proficiency: 'advanced' },
+        { name: 'Godot', proficiency: 'expert' },
+        { name: 'Tensorflow', proficiency: 'beginner' },
+        { name: 'Unity', proficiency: 'advanced' },
     ]
 };
