@@ -6,7 +6,7 @@
             <span class="main-title-1">SOFTWARE</span>
             <span class="main-title-2">DEVELOPER</span>
         </div>
-        <p class="main-desc font-secondary">Hello, I am Kaan! I design and build softwares keeping user on my priority. My scope goes from building functional systems with clean UI/UX to designing interactive experiences in game engines. I'm born curious and always seeking learn new things.</p>
+        <p class="main-desc font-secondary">Hello, I am Kaan! I design and build softwares keeping user on my priority. My scope goes from building functional systems with clean UI/UX to designing interactive experiences in game engines. I'm born curious and always seeking to learn new things.</p>
         <div class="main-buttons">
             <button class="btn-primary">VIEW PROJECTS</button>
             <button class="btn-secondary">CONTACT ME</button>

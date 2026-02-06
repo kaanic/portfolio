@@ -15,15 +15,15 @@
             
             <div class="about-paragraphs">
                 <p class="profile-text font-secondary">
-                    Hello! I'm Kaan, lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vero iste, incidunt quos, quo eos est excepturi enim sequi, ad dolore temporibus doloremque quae harum doloribus reiciendis magni tenetur. Laboriosam?
+                    I love building softwares that people can actually interact with and enjoy using. Whether it's a web application or a game project, I always prioritize the user experience to feel responsive, fun and "alive" instead of just functional.
                 </p>
                 
                 <p class="profile-text font-secondary">
-                    Hello! I'm Kaan, lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vero iste, incidunt quos, quo eos est excepturi enim sequi, ad dolore temporibus doloremque quae harum doloribus reiciendis magni tenetur. Laboriosam?
+                    When I develop something; I care a lot about UX, accessibility, and performance. I also often think in terms of architecture. I tend to mentally break down the structure of anything I see, and I enjoy applying that same mindset when designing my own projects.
                 </p>
                 
                 <p class="profile-text font-secondary">
-                    Hello! I'm Kaan, lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vero iste, incidunt quos, quo eos est excepturi enim sequi, ad dolore temporibus doloremque quae harum doloribus reiciendis magni tenetur. Laboriosam?
+                    I'm also someone who naturally enjoys helping others, especially when it comes to debugging and solving tricky problems. I'm always excited to learn and improve, and I'm especially motivated by projects that are interactive, creative, and genuinely fun to work on.
                 </p>
             </div>
 
@@ -57,7 +57,7 @@
                 <div class="achievement-content">
                     <div class="achievement-icon"><Trophy size={32}/></div>
                     <div class="achievement-text">ACHIEVEMENT UNLOCKED</div>
-                    <div class="achievement-title">INDIE ENJOYER</div>
+                    <div class="achievement-title">CERTIFIED ENJOYABLE</div>
                     <div class="achievement-badge">★ UNCOMMON ★</div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="status-item">
                         <span class="status-dot status-dot-accent3"></span>
-                        <span class="status-text">Currently learning Ruby</span>
+                        <span class="status-text">Currently learning C++</span>
                     </div>
                 </div>
             </div>
@@ -125,6 +125,8 @@
     .profile-text {
         font-size: 1rem;
         line-height: 1.7;
+        
+        color: white;
     }
 
     .about-paragraphs {
@@ -160,6 +162,10 @@
         gap: 1.5rem;
     }
 
+    .about-interests, .about-status {
+        cursor: default;
+    }
+
     .about-box-heading {
         display: flex;
         align-items: center;
@@ -175,7 +181,7 @@
         display: flex;
         flex-direction: column;
 
-        gap: .75rem;
+        gap: .6rem;
         padding: 0;
         margin: 0;
 
@@ -190,6 +196,10 @@
         color: var(--textMuted);
 
         gap: .5rem;
+    }
+
+    .about-interests-list li:hover {
+        color: var(--text);
     }
 
     .bullet {
@@ -277,12 +287,16 @@
         color: var(--textMuted);
     }
 
+    .status-text:hover {
+        color: var(--text);
+    }
+
     @keyframes pulse {
         0%, 100% {
             opacity: 1;
         }
         50% {
-            opacity: 0.5;
+            opacity: 0.25;
         }
     }
 </style>
