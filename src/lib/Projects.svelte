@@ -34,6 +34,9 @@
     }
 
     .show-more {
+        /* remove this after implementing single post for each, or something else idk */
+        display: none !important;
+
         text-align: center;
 
         margin-top: 3rem;
@@ -48,7 +51,7 @@
 
         background-color: var(--bg);
         color: var(--accent1);
-        animation: blink 1.5s steps(2) infinite;
+        /* animation: blink 1.5s steps(2) infinite; */
 
         font-size: .75rem;
     }
