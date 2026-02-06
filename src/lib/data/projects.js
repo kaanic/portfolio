@@ -30,7 +30,7 @@ export const projects = [
         title: 'INTERACTIVE EVENT MAP',
         desc: 'A website design for a client where user can interact with the map',
         tech: ['Javascript', 'HTML/CSS', 'OpenStreetMap'],
-        status: 'IN PROGRESS',
+        status: 'COMPLETED',
         image: 'images/project/interactive-map.png',
         demoUrl: null,
         codeUrl: null,
