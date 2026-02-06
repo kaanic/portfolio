@@ -11,7 +11,7 @@ export const contacts = [
         icon: Linkedin,
         type: "LINKEDIN",
         address: "linked.in/kaanic",
-        url: "https://google.com"
+        url: "https://www.linkedin.com/in/kaan-ozkilic-8830373ab/"
     },
     {
         icon: Github,
