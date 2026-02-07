@@ -239,7 +239,7 @@
 
     .tech-stack {
         display: flex;
-        flex-wrap: flex;
+        flex-wrap: wrap;
 
         gap: .5rem;
         padding-top: .5rem;
@@ -308,5 +308,72 @@
     .btn-code:hover {
         transform: translate(1px, 1px);
         box-shadow: 3px 3px color-mix(in srgb, var(--accent3), transparent 50%);
+    }
+
+    @media (max-width: 768px) {
+        .projects-image-container {
+            height: 200px;
+        }
+    }
+
+    .project-content {
+        padding: 1rem;
+    }
+
+    .status-badge {
+        padding: .4rem .8rem;
+        font-size: .65rem;
+    }
+
+    @media (max-width: 640px) {
+        .project-image-container {
+            height: 180px;
+        }
+
+        .project-content {
+            padding: .75rem;
+            gap: .75rem;
+        }
+
+        .project-title {
+            font-size: .65rem;
+        }
+
+        .project-desc {
+            font-size: .65rem;
+        }
+
+        .tech-pill {
+            padding: .4rem .6rem;
+            font-size: .65rem;
+        }
+
+        .action-buttons {
+            flex-direction: column;
+            gap: .5rem;
+        }
+
+        .action-buttons button {
+            padding: .6rem .8rem;
+            font-size: .65rem;
+        }
+
+        .status-badge {
+            top: .5rem;
+            right: .5rem;
+
+            padding: .3rem .6rem;
+
+            font-size: .6rem;
+        }
+
+        .project-card {
+            border-width: 3px;
+            box-shadow: 5px 5px color-mix(in srgb, var(--borderAccent), transparent 80%);
+        }
+
+        .project-card:hover {
+            box-shadow: 4px 4px color-mix(in srgb, var(--borderAccent), transparent 80%);
+        }
     }
 </style>

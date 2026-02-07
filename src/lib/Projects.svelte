@@ -27,7 +27,7 @@
 
     .projects-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
 
         gap: 2rem;
         margin-bottom: 2rem;
@@ -62,6 +62,23 @@
         }
         50% {
             opacity: .5;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .projects-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .projects-grid {
+            gap: 1rem;    
+        }
+
+        .projects-container {
+            padding: 2rem 0;
         }
     }
 </style>
