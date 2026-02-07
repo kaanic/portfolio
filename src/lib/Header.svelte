@@ -104,4 +104,10 @@
         transform: translate(2px, 2px);
         box-shadow: 3px 3px color-mix(in srgb, var(--borderAccent), transparent 80%);
     }
+
+    @media (max-width: 850px) {
+    #navigation {
+        display: none;
+    }
+}
 </style>
