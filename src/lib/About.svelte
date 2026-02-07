@@ -5,7 +5,7 @@
     import { miniInfo } from '$lib/data'
 </script>
 
-<div class="about-container section">
+<div class="about-container section" id="about">
     <h1 class="h1-title"><span class="title-arrow">>></span> ABOUT_ME.TXT</h1>
     <div class="about-content">
         <div class="about-left-column about-info-box about-profile">

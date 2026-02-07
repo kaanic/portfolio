@@ -3,7 +3,7 @@
     import { projects } from "$lib/data";
 </script>
 
-<div class="projects-container section">
+<div class="projects-container section" id="projects">
     <h1 class="h1-title"><span class="title-arrow">>></span> PROJECTS.ZIP</h1>
 
     <div class="projects-grid">

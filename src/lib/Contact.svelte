@@ -3,7 +3,7 @@
     import { contacts } from "$lib/data";
 </script>
 
-<div class="contact-container section">
+<div class="contact-container section" id="contact">
     <h1 class="h1-title"><span class="title-arrow">>></span> CONTACT.EXE</h1>
 
     <div class="contact-content">
