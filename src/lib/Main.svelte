@@ -180,8 +180,8 @@
 
         .main-top-mobile {
             display: flex;
-            gap: 2rem;
-            align-items: flex-start;
+            gap: 2.5rem;
+            align-items: center;
         }
 
         /* shows the hidden img meant for mobile */
