@@ -126,7 +126,7 @@
         font-size: 1rem;
         line-height: 1.7;
         
-        color: white;
+        color: var(--text);
     }
 
     .about-paragraphs {
@@ -299,4 +299,128 @@
             opacity: 0.25;
         }
     }
+
+    @media (max-width: 968px) {
+        .about-content {
+            grid-template-columns: 1fr;
+        }
+
+        .about-right-column {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .about-container {
+            padding: 2rem 0;
+        }
+
+        .about-content {
+            gap: 1rem;
+        }
+
+        .profile-text {
+            font-size: .9rem;
+            line-height: 1.6;
+        }
+
+        .about-right-column {
+            gap: 1rem;
+        }
+    }
+    
+    @media (max-width: 640px) {
+        .about-right-column {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .about-info-box {
+            padding: 1rem;
+            border-width: 4px;
+            box-shadow: 4px 4px color-mix(in srgb, var(--borderAccent), transparent 80%);
+        }
+
+        .about-profile {
+            gap: 1rem;
+        }
+
+        .about-profile-header {
+            font-size: .65rem;
+        }
+
+        .profile-text {
+            font-size: .85rem;
+        }
+
+        .about-paragraphs {
+            gap: .75rem;
+        }
+
+        .mini-info-container {
+            padding-top: 1rem;
+        }
+
+        .mini-info-container > h3 {
+            font-size: .65rem;
+            margin-bottom: .75rem;
+        }
+
+        /* 2fr has a fixed min-width that exceeds 480px... */
+        .info-grid {
+            grid-template-columns: 1fr;
+            gap: .75rem;
+        }
+
+        .about-box-heading {
+            font-size: .65rem;
+            margin-bottom: .75rem;
+        }
+
+        .about-interests-list {
+            gap: .5rem;
+        }
+
+        .about-interests-list li {
+            font-size: .65rem;
+        }
+
+        .achievement-content {
+            gap: .75rem;
+        }
+
+        .achievement-icon {
+            font-size: 1.5rem;
+        }
+
+        .achievement-text {
+            font-size: .65rem;
+        }
+
+        .achievement-title {
+            font-size: .85rem;
+        }
+
+        .achievement-badge {
+            font-size: .65rem;
+            padding: .4rem .75rem;
+        }
+
+        .about-status-list {
+            gap: .5rem;
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+        }
+
+        .status-item {
+            font-size: .65rem;
+            gap: .75rem;
+        }
+    }
+    
 </style>
