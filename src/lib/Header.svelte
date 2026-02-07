@@ -8,7 +8,7 @@
 <header>
     <div class="header-content">
         <a href="kaanic.dev" class="logo">
-            >_ KAANIC.DEV
+            <img src="/kaanic-logo.png" alt="KAANIC.DEV" class="logo-img">
         </a>
         <nav id="navigation">
             <a href="#about" class="nav-link">ABOUT</a>
@@ -28,7 +28,7 @@
 
 <style>
     header {
-        padding: 1.5rem 2rem;
+        padding: 1rem 0rem;
         background-color: var(--cardBg);
         border-bottom: 5px solid var(--borderAccent);
 
@@ -49,14 +49,18 @@
     }
 
     .logo {
-        box-shadow: 5px 5px var(--borderAccent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .logo, .theme-toggle {
-        background-color: var(--bg);
-        color: var(--text);
+    .logo-img {
+        height: 48px;
+        width: auto;
+        display: block;
 
-        border: 5px solid var(--borderAccent);
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/image-rendering */
+        image-rendering: crisp-edges;
     }
 
     #navigation {
@@ -88,6 +92,10 @@
 
     .theme-toggle {
         box-shadow: 5px 5px color-mix(in srgb, var(--borderAccent), transparent 80%);
+        background-color: var(--bg);
+        color: var(--text);
+        border: 5px solid var(--borderAccent);
+        
         cursor: pointer;
         transition: all .3s ease;
     }
