@@ -135,6 +135,8 @@
     .category-label {
         font-size: .75rem;
         color: var(--accent1);
+
+        width: 100%;
     }
 
     .category-buttons {
@@ -142,6 +144,8 @@
         flex-wrap: wrap;
 
         gap: .5rem;
+
+        width: 100%;
     }
 
     .proficiency-info {
@@ -215,6 +219,8 @@
 
     .info-level {
         font-size: .75rem;
+
+        white-space: nowrap;
     }
 
     .info-level.expert {
@@ -240,7 +246,7 @@
 
     .skills-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
         gap: 1rem;
         margin-bottom: 2rem;
     }
@@ -282,5 +288,94 @@
 
     .stat-value {
         color: var(--accent1);
+    }
+
+    @media (max-width: 768px) {
+        .stack-content {
+            padding: 1.5rem;
+        }
+
+        .category-header {
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .category-label {
+            margin-bottom: .5rem;
+        }
+
+        .info-items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .stats-footer {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .stats-right {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .stack-content {
+            padding: 1rem;
+            border-width: 3px;
+        }
+
+        .category-buttons {
+            flex-direction: column;
+        }
+
+        .info-items {
+            grid-template-columns: 1fr;
+        }
+
+        .proficiency-info {
+            padding: .75rem;
+        }
+
+        .stats-right {
+            flex-direction: column;
+            gap: .75rem;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .stack-content {
+            padding: .75rem;
+            border-width: 3px;
+        }
+
+        .category-header {
+            gap: .75rem;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            border-width: 3px;
+        }
+
+        .proficiency-info {
+            padding: .5rem;
+            margin-bottom: 1rem;
+        }
+
+        .skills-grid {
+            gap: .75rem;
+            margin-bottom: 1rem;
+        }
+
+        .stats-footer {
+            padding-top: 1rem;
+            border-width: 3px;
+        }
+
+        .info-level {
+            font-size: .65rem;
+        }
+
+        .info-desc {
+            font-size: .55rem;
+        }
     }
 </style>

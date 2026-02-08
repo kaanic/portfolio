@@ -52,11 +52,13 @@
         position: relative;
         border: 4px solid var(--border);
         padding: 1rem;
+        min-width: 0; /* for card to shrink */
         
         background-color: var(--bg);
 
         transition: all .3s ease;
         cursor: pointer;
+
     }
 
     .skill-card.expert {
@@ -96,6 +98,9 @@
         font-size: .75rem;
         font-weight: bold;
         color: var(--text);
+
+        flex: 1;
+        word-break: break-word;
     }
 
     .skill-badge {
@@ -104,6 +109,8 @@
 
         padding: .25rem .5rem;
         border: 2px solid;
+
+        flex-shrink: 0;
     }
 
     .skill-badge.expert {
@@ -137,12 +144,15 @@
     .power-label {
         font-size: .65rem;
         color: var(--textMuted);
+
+        flex-shrink: 0;
     }
 
     .power-bar-container {
         flex: 1;
 
         height: 8px;
+        min-width: 0;
 
         border: 2px solid var(--border);
 
@@ -248,6 +258,35 @@
         }
         50% {
             opacity: 0.7;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .skill-card {
+            padding: .75rem;
+            border-width: 3px;
+        }
+
+        .skill-header {
+            margin-bottom: .75rem;
+        }
+
+        .skill-name {
+            font-size: .7rem;
+        }
+
+        .skill-badge {
+            font-size: .55rem;
+            padding: .2rem .4rem;
+        }
+
+        .skill-power {
+            margin-bottom: .75rem;
+        }
+
+        .skill-square {
+            width: 10px;
+            height: 10px;
         }
     }
 </style>
