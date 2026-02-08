@@ -7,7 +7,7 @@
 
 <header>
     <div class="header-content">
-        <a href="kaanic.dev" class="logo">
+        <a href="/" class="logo">
             <img src="/kaanic-logo.png" alt="KAANIC.DEV" class="logo-img">
         </a>
         <nav id="navigation">
@@ -28,15 +28,13 @@
 
 <style>
     header {
-        padding: 1rem 0rem;
+        padding: .75rem 1rem;
         background-color: var(--cardBg);
-        border-bottom: 5px solid var(--borderAccent);
+        border-bottom: 4px solid var(--border);
 
         position: sticky;
         top: 0;
         z-index: 100;
-
-        font-size: .8rem;
     }
 
     .header-content {
@@ -46,12 +44,20 @@
 
         max-width: var(--contentMaxWidth);
         margin: 0 auto;
+        gap: 1.5rem;
     }
 
     .logo {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-shrink: 0;
+
+        transition: opacity .3s ease;
+    }
+
+    .logo:hover {
+        opacity: .8;
     }
 
     .logo-img {
@@ -66,48 +72,76 @@
     #navigation {
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex: 1;
 
-        gap: .5rem;
+        gap: .75rem;
     }
 
     .nav-link {
         background-color: var(--cardBg);
         color: var(--text);
 
-        border: 5px solid var(--border);
+        border: 3px solid var(--border);
+        padding: .5rem 1rem;
+
+        font-size: .75rem;
+        text-decoration: none;
 
         transition: all .3s ease;
     }
 
     .nav-link:hover {
-        background-color: var(--borderAccent);
-        color: #ffffff;
-        border-color: var(--borderAccent);
-        box-shadow: 5px 5px color-mix(in srgb, var(--borderAccent), transparent 80%);
-    }
-
-    .logo, .nav-link, .theme-toggle {
-        padding: .5rem .8rem;
+        background-color: var(--border);
     }
 
     .theme-toggle {
-        box-shadow: 5px 5px color-mix(in srgb, var(--borderAccent), transparent 80%);
-        background-color: var(--bg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+
+        background-color: transparent;
         color: var(--text);
-        border: 5px solid var(--borderAccent);
+        border: 3px solid var(--border);
         
+        padding: .5rem;
+
         cursor: pointer;
         transition: all .3s ease;
     }
 
     .theme-toggle:hover {
-        transform: translate(2px, 2px);
-        box-shadow: 3px 3px color-mix(in srgb, var(--borderAccent), transparent 80%);
+        background-color: var(--border);
     }
 
     @media (max-width: 850px) {
     #navigation {
         display: none;
+    }
+
+    .header-content {
+        gap: 1rem;
+    }
+
+    @media (max-width: 480px) {
+        header {
+            padding: .5rem .75rem;
+        }
+
+        .logo-img {
+            height: 40px;
+        }
+
+        .theme-toggle {
+            padding: .4rem;
+            border-width: 2px;
+        }
+
+        .nav-link {
+            padding: .4rem .8rem;
+            border-width: 2px;
+        }
     }
 }
 </style>
