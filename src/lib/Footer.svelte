@@ -14,7 +14,7 @@
         border-top: 4px solid var(--border);
         
         font-family: var(--secondaryFontFamily);
-        font-size: .75rem;
+        font-size: .85rem;
         color: var(--textMuted);
     }
 </style>
