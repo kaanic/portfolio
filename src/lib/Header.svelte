@@ -1,8 +1,17 @@
 <script>
-    import { Sun, Moon } from "lucide-svelte";
+    import { Sun, Moon, Menu, X } from "lucide-svelte";
     import { getIsDarkMode, toggleTheme } from "../themeStore.svelte";
 
     let isDarkMode = $derived(getIsDarkMode());
+    let isMenuOpen = $state(false);
+
+    function toggleMenu() {
+        isMenuOpen = !isMenuOpen;
+    }
+
+    function closeMenu() {
+        isMenuOpen = false;
+    }
 </script>
 
 <header>
@@ -16,14 +25,36 @@
             <a href="#skills" class="nav-link">SKILLS</a>
             <a href="#contact" class="nav-link">CONTACT</a>
         </nav>
-        <button class="theme-toggle" aria-label="Toggle theme" onclick={toggleTheme}>
-            {#if isDarkMode}
-                <Sun size={20} />
-            {:else}
-                <Moon size={20} />
-            {/if}
-        </button>
+
+        <div class="header-actions">
+            <button class="theme-toggle" aria-label="Toggle theme" onclick={toggleTheme}>
+                {#if isDarkMode}
+                    <Sun size={20} />
+                {:else}
+                    <Moon size={20} />
+                {/if}
+            </button>
+
+            <button class="burger-menu" aria-label="Toggle menu" onclick={toggleMenu}>
+                {#if isMenuOpen}
+                    <X size={20} />
+                {:else}
+                    <Menu size={20} />
+                {/if}
+            </button>
+        </div>
     </div>
+
+    {#if isMenuOpen}
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+                <a href="#about" class="mobile-nav-link" onclick={closeMenu}>ABOUT</a>
+                <a href="#projects" class="mobile-nav-link" onclick={closeMenu}>PROJECTS</a>
+                <a href="#skills" class="mobile-nav-link" onclick={closeMenu}>SKILLS</a>
+                <a href="#contact" class="mobile-nav-link" onclick={closeMenu}>CONTACT</a>
+            </nav>
+        </div>
+    {/if}
 </header>
 
 <style>
@@ -79,7 +110,7 @@
     }
 
     .nav-link {
-        background-color: var(--cardBg);
+        background-color: transparent;
         color: var(--text);
 
         border: 3px solid var(--border);
@@ -93,6 +124,12 @@
 
     .nav-link:hover {
         background-color: var(--border);
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
     }
 
     .theme-toggle {
@@ -115,13 +152,84 @@
         background-color: var(--border);
     }
 
-    @media (max-width: 850px) {
-    #navigation {
+    .burger-menu {
         display: none;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+
+        background-color: transparent;
+        color: var(--text);
+        border: 3px solid var(--border);
+
+        padding: .5rem;
+
+        cursor: pointer;
+        transition: all .3s ease;
     }
 
-    .header-content {
-        gap: 1rem;
+    .burger-menu:hover {
+        background-color: var(--border);
+    }
+
+    .mobile-menu {
+        max-width: var(--contentMaxWidth);
+        margin: 0 auto;
+        margin-top: .8rem;
+        padding: 1rem;
+
+        background-color: var(--cardBg);
+        border-top: 2px solid var(--border);
+
+        animation: slideDown .3s ease;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+
+        gap: .75rem;
+    }
+
+    .mobile-nav-link {
+        padding: .75rem 1rem;
+        border: 3px solid var(--border);
+        background-color: transparent;
+        color: var(--text);
+
+        font-size: .75rem;
+        text-decoration: none;
+        text-align: center;
+
+        transition: all .3s ease;
+    }
+
+    .mobile-nav-link:hover {
+        background-color: var(--border);
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        } to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 850px) {
+        #navigation {
+            display: none;
+        }
+
+        .header-content {
+            gap: 1rem;
+        }
+
+        .burger-menu {
+            display: flex;
+        }
     }
 
     @media (max-width: 480px) {
@@ -133,15 +241,14 @@
             height: 40px;
         }
 
-        .theme-toggle {
+        .theme-toggle, .burger-menu {
             padding: .4rem;
             border-width: 2px;
         }
 
-        .nav-link {
-            padding: .4rem .8rem;
+        .mobile-nav-link {
+            padding: .6rem .8rem;
             border-width: 2px;
         }
     }
-}
 </style>
