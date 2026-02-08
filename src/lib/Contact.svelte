@@ -44,4 +44,50 @@
     .contact-content > p {
         font-size: 1rem;
     }
+
+    @media (max-width: 768px) {
+        .contact-content {
+            padding: 1.25rem 1.25rem .5rem;
+        }
+
+        .contact-content > p {
+            font-size: .9rem;
+        }
+
+        .contact-items {
+            gap: .75rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .contact-content {
+            padding: 1rem 1rem .5rem;
+            border-width: 4px;
+            box-shadow: 4px 4px color-mix(in srgb, var(--borderAccent), transparent 80%);
+        }
+
+        .contact-content > p {
+            font-size: .85rem;
+        }
+
+        .contact-items {
+            gap: .5rem;
+            padding: .75rem 0;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .contact-content {
+            padding: .75rem .75rem .5rem;
+            border-width: 3px;
+        }
+
+        .contact-content > p {
+            font-size: .8rem;
+        }
+
+        .contact-items {
+            gap: .5rem;
+        }
+    }
 </style>
