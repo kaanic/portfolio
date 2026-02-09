@@ -92,10 +92,6 @@
             flex: 1 1 calc(50% - .5rem);
         }
 
-        .contact-text {
-            white-space: normal;
-        }
-
         .contact-address {
             font-size: .65rem;
         }
