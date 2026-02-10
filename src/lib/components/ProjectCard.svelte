@@ -323,6 +323,25 @@
             padding: .4rem .8rem;
             font-size: .65rem;
         }
+
+        /* must be an easier way to do this and avoid repetition ? */
+
+        .project-card:hover, .btn-code:hover, .btn-demo:hover {
+            transform: none;
+        }
+
+        .btn-code:hover {
+            box-shadow: 4px 4px color-mix(in srgb, var(--accent3), transparent 50%);
+        }
+
+        .btn-demo:hover {
+            box-shadow: 4px 4px color-mix(in srgb, var(--accent1), transparent 50%);
+        }
+
+        .project-card:hover {
+            box-shadow: 8px 8px color-mix(in srgb, var(--borderAccent), transparent 80%);
+
+        }
     }
 
     @media (max-width: 640px) {

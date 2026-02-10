@@ -92,6 +92,10 @@
             flex: 1 1 calc(50% - .5rem);
         }
 
+        .contact-item-container:hover {
+            transform: none;
+        }
+
         .contact-address {
             font-size: .65rem;
         }

@@ -208,6 +208,11 @@
         .main-buttons > a {
             min-width: 150px;
         }
+
+        .main-buttons > a:hover {
+            transform: none;
+            box-shadow: 6px 6px black;
+        }
     }
 
     @media (max-width: 580px) {
