@@ -314,15 +314,15 @@
         .projects-image-container {
             height: 200px;
         }
-    }
-
-    .project-content {
-        padding: 1rem;
-    }
-
-    .status-badge {
-        padding: .4rem .8rem;
-        font-size: .65rem;
+        
+        .project-content {
+            padding: 1rem;
+        }
+        
+        .status-badge {
+            padding: .4rem .8rem;
+            font-size: .65rem;
+        }
     }
 
     @media (max-width: 640px) {
