@@ -10,7 +10,7 @@ export const contacts = [
     {
         icon: Linkedin,
         type: "LINKEDIN",
-        address: "linked.in/kaanic",
+        address: "linked.in/kaan-ozkilic",
         url: "https://www.linkedin.com/in/kaan-ozkilic-8830373ab/"
     },
     {

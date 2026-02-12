@@ -9,7 +9,7 @@ export const categories = [
 
 export const techStackCategories = {
     languages: [
-        { name: 'C', proficiency: 'beginner' },
+        { name: 'C/C++', proficiency: 'beginner' },
         { name: 'C#', proficiency: 'intermediate' },
         { name: 'GDscript', proficiency: 'expert' },
         { name: 'JavaScript', proficiency: 'advanced' },
@@ -35,7 +35,7 @@ export const techStackCategories = {
         { name: 'Docker', proficiency: 'intermediate' },
         { name: 'Git', proficiency: 'advanced' },
         { name: 'Godot', proficiency: 'expert' },
-        { name: 'Tensorflow', proficiency: 'beginner' },
+        { name: 'Robot Framework', proficiency: 'intermediate' },
         { name: 'Unity', proficiency: 'advanced' },
     ]
 };
