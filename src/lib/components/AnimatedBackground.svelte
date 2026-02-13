@@ -176,13 +176,13 @@
             transform: translate(0px, 0px) rotate(0deg);
         }
         25% {
-            transform: translate(6px, 8px) rotate(90deg);
+            transform: translate(12px, 16px) rotate(90deg);
         }
         50% {
-            transform: translate(14px, 2px) rotate(180deg);
+            transform: translate(28px, 4px) rotate(180deg);
         }
         75% {
-            transform: translate(8px, -6px) rotate(270deg);
+            transform: translate(16px, -12px) rotate(270deg);
         }
     }
 </style>
