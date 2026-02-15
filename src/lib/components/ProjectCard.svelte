@@ -70,11 +70,6 @@
             </button>
         </div>
     </div>
-    
-    <!-- TODO: cabinet deco -->
-    <!-- remove if opt issues -->
-    <!-- <div class="decoration-left"></div>
-    <div class="decoration-rigth"></div> -->
 </div>
 
 <style>
