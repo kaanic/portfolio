@@ -47,7 +47,6 @@
             {/each}
         </div>
 
-        <!-- TODO: if code or demo doesnt exist, grey it out -->
         <div class="action-buttons">
             <button 
                 class="btn-demo"
