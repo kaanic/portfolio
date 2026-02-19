@@ -17,7 +17,7 @@
 <header>
     <div class="header-content">
         <a href="/" class="logo">
-            <img src="/knc-logo.webp" alt="KAANIC.DEV" class="logo-img">
+            <img src="/knc-logo.webp" alt="KAANIC.DEV" class="logo-img" height="48" width="100">
         </a>
         <nav id="navigation">
             <a href="#about" class="nav-link">ABOUT</a>
