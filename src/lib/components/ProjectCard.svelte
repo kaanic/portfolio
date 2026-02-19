@@ -34,7 +34,7 @@
                 <span class="color-square square-accent3"></span>
             </div>
             <h3 class="project-title">{project.title}</h3>
-            <Code size={16} class="code-icon" />
+            <Code size={16} class="code-icon" aria-hidden="true"/>
         </div>
 
         <p class="project-desc font-secondary">

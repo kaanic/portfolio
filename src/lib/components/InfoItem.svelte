@@ -4,7 +4,7 @@
 
 <div class="info-item">
     <span class="info-icon">
-        <Icon size={20} />
+        <Icon size={20} aria-hidden="true"/>
     </span>
     <div class="info-content">
         <div class="info-label">{label}:</div>

@@ -28,7 +28,7 @@
 
     <div class="job-card-bottom">
         <h4 class="achievements-title">
-            <Trophy size={12}/>
+            <Trophy size={12} aria-hidden="true"/>
             ACHIEVEMENTS UNLOCKED:
         </h4>
         <ul class="achievements-list">

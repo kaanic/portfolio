@@ -29,17 +29,17 @@
         <div class="header-actions">
             <button class="theme-toggle" aria-label="Toggle theme" onclick={toggleTheme}>
                 {#if isDarkMode}
-                    <Sun size={20} />
+                    <Sun size={20} aria-hidden="true"/>
                 {:else}
-                    <Moon size={20} />
+                    <Moon size={20} aria-hidden="true"/>
                 {/if}
             </button>
 
             <button class="burger-menu" aria-label="Toggle menu" onclick={toggleMenu}>
                 {#if isMenuOpen}
-                    <X size={20} />
+                    <X size={20} aria-hidden="true"/>
                 {:else}
-                    <Menu size={20} />
+                    <Menu size={20} aria-hidden="true"/>
                 {/if}
             </button>
         </div>

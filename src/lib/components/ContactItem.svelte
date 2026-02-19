@@ -10,7 +10,7 @@
 
 <button class="contact-item-container" onclick={handleClick}>
     <div class="contact-type-icon">
-        <Icon size={24} />
+        <Icon size={24} aria-hidden="true"/>
     </div>
     <div class="contact-text">
         <span class="contact-type">{type}</span>

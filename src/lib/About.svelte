@@ -43,7 +43,7 @@
 
         <div class="about-right-column">
             <div class="about-interests about-info-box">
-                <h3 class="about-box-heading"><Gamepad2 size={16}/>INTERESTS</h3>
+                <h3 class="about-box-heading"><Gamepad2 size={16} aria-hidden="true"/>INTERESTS</h3>
                 <ul class="about-interests-list">
                     <li><span class="bullet">▸</span> Game Development</li>
                     <li><span class="bullet">▸</span> Pixel Art</li>
@@ -55,7 +55,7 @@
 
             <div class="about-achievement about-info-box">
                 <div class="achievement-content">
-                    <div class="achievement-icon"><Trophy size={32}/></div>
+                    <div class="achievement-icon"><Trophy size={32} aria-hidden="true"/></div>
                     <div class="achievement-text">ACHIEVEMENT UNLOCKED</div>
                     <div class="achievement-title">CERTIFIED ENJOYER</div>
                     <div class="achievement-badge">★ UNCOMMON ★</div>
@@ -63,7 +63,7 @@
             </div>
 
             <div class="about-status > about-info-box">
-                <h3 class="about-box-heading"><Zap size={16}/>STATUS</h3>
+                <h3 class="about-box-heading"><Zap size={16} aria-hidden="true"/>STATUS</h3>
                 <div class="about-status-list">
                     <div class="status-item">
                         <span class="status-dot status-dot-accent1"></span>
