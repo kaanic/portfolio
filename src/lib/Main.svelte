@@ -59,6 +59,7 @@
 
     .main-img {
         width: 100%;
+        aspect-ratio: 1 / 1;
         margin-left: 10px; /* collides with buttons on certain scenarios */
         height: auto;
         display: block;
