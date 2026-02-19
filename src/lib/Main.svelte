@@ -3,7 +3,7 @@
         <div class="main-top-mobile">
             <!-- mobile img. really bad approach, but works-->
             <div class="main-img-mobile">
-                <img class="main-img" src="images/pxArt.png" alt="pixelart of Kaan">
+                <img class="main-img" src="images/pxArt-compressed.png" alt="pixelart of Kaan">
             </div>
 
             <div class="title">
@@ -22,7 +22,7 @@
     </div>
     <div class="main-right-column">
         <!-- desktop img -->
-        <img class="main-img" src="images/pxArt.png" alt="pixelart of Kaan">
+        <img class="main-img" src="images/pxArt-compressed.png" alt="pixelart of Kaan">
     </div>
 </div>
 
@@ -63,6 +63,8 @@
         margin-left: 10px; /* collides with buttons on certain scenarios */
         height: auto;
         display: block;
+
+        image-rendering: pixelated;
 
         border: 5px solid var(--border);
         box-shadow: 10px 10px color-mix(in srgb, var(--border), transparent 50%);
