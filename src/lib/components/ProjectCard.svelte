@@ -195,8 +195,6 @@
         border: 2px solid;
     }
 
-    /* TODO: HOLY REFACTOR ? */
-
     .square-accent1 {
         background-color: var(--accent1);
         border-color: var(--accent1);
