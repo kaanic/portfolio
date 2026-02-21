@@ -316,8 +316,6 @@
             font-size: .65rem;
         }
 
-        /* must be an easier way to do this and avoid repetition ? */
-
         .project-card:hover, .btn-code:hover, .btn-demo:hover {
             transform: none;
         }
