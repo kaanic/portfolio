@@ -20,7 +20,7 @@
         background-color: var(--bg);
         color: var(--text);
 
-        transition: all .3s ease;
+        transition: var(--transitionBase);
 
         cursor: pointer;
     }

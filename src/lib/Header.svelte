@@ -84,7 +84,7 @@
         justify-content: center;
         flex-shrink: 0;
 
-        transition: opacity .3s ease;
+        transition: var(--transitionOpacity);
     }
 
     .logo:hover {
@@ -119,7 +119,7 @@
         font-size: .75rem;
         text-decoration: none;
 
-        transition: all .3s ease;
+        transition: var(--transitionBase);
     }
 
     .nav-link:hover {
@@ -145,7 +145,7 @@
         padding: .5rem;
 
         cursor: pointer;
-        transition: all .3s ease;
+        transition: var(--transitionBase);
     }
 
     .theme-toggle:hover {
@@ -165,7 +165,7 @@
         padding: .5rem;
 
         cursor: pointer;
-        transition: all .3s ease;
+        transition: var(--transitionBase);
     }
 
     .burger-menu:hover {
@@ -201,7 +201,7 @@
         text-decoration: none;
         text-align: center;
 
-        transition: all .3s ease;
+        transition: var(--transitionBase);
     }
 
     .mobile-nav-link:hover {

@@ -56,7 +56,7 @@
         
         background-color: var(--bg);
 
-        transition: all .3s ease;
+        transition: var(--transitionBase);
         cursor: pointer;
 
     }
@@ -224,7 +224,7 @@
         border: 4px solid;
         opacity: 0;
 
-        transition: opacity .3s ease;
+        transition: var(--transitionOpacity);
         pointer-events: none;
     }
 

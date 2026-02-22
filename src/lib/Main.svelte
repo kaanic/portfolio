@@ -127,7 +127,7 @@
         box-shadow: 6px 6px black;
         
         cursor: pointer;
-        transition: all .3s ease;
+        transition: var(--transitionBase);
     }
 
     .btn-primary {

@@ -32,7 +32,7 @@
         min-width: 0;
 
         cursor: pointer;
-        transition: all .3s ease;
+        transition: var(--transitionBase);
     }
 
     .contact-item-container:hover {
@@ -55,7 +55,7 @@
 
         width: 48px;
         color: var(--accent2);
-        transition: color .3s ease;
+        transition: var(--transitionColor);
     }
 
     .contact-text {
@@ -74,7 +74,7 @@
     .contact-address {
         font-size: .65rem;
         color: var(--text);
-        transition: color .3s ease;
+        transition: var(--transitionColor);
 
         overflow: hidden;
         text-overflow: ellipsis;
@@ -83,7 +83,7 @@
     .contact-type {
         font-size: .75rem;
         color: var(--textMuted);
-        transition: color .3s ease;
+        transition: var(--transitionColor);
     }
 
     @media (max-width: 768px) {
