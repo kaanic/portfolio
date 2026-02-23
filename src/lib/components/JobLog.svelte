@@ -11,7 +11,7 @@
         </div>
 
         <div class="job-info">
-            <h3 class="job-role">{job.role}</h3>
+            <h2 class="job-role">{job.role}</h2>
             <div class=job-company>{job.company}</div>
         </div>
 
@@ -27,10 +27,10 @@
     </div>
 
     <div class="job-card-bottom">
-        <h4 class="achievements-title">
+        <h3 class="achievements-title">
             <Trophy size={12} aria-hidden="true"/>
             ACHIEVEMENTS UNLOCKED:
-        </h4>
+        </h3>
         <ul class="achievements-list">
             {#each job.achievements as ach}
                 <li>
