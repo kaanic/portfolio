@@ -33,7 +33,7 @@
                 <span class="color-square square-accent2"></span>
                 <span class="color-square square-accent3"></span>
             </div>
-            <h3 class="project-title">{project.title}</h3>
+            <h2 class="project-title">{project.title}</h2>
             <Code size={16} class="code-icon" aria-hidden="true"/>
         </div>
 
