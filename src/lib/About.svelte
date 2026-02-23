@@ -28,7 +28,7 @@
             </div>
 
             <div class="mini-info-container">
-                <h3>> INFO_ABOUT_ME</h3>
+                <h2>> INFO_ABOUT_ME</h2>
                 <div class="info-grid">
                     {#each miniInfo as info}
                         <InfoItem 
@@ -142,7 +142,7 @@
         border-top: 2px solid var(--border);
     }
 
-    .mini-info-container > h3 {
+    .mini-info-container > h2 {
         font-size: .75rem;
         margin-bottom: 1rem;
 
@@ -363,7 +363,7 @@
             padding-top: 1rem;
         }
 
-        .mini-info-container > h3 {
+        .mini-info-container > h2 {
             font-size: .65rem;
             margin-bottom: .75rem;
         }
