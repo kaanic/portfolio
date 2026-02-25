@@ -90,7 +90,6 @@
     
     .about-content {
         display: grid;
-        /* 2/1 ratio */
         grid-template-columns: 2fr 1fr;
         gap: 1.5rem;
     }
@@ -263,7 +262,6 @@
     }
 
     .status-dot {
-        /* makes a dot */
         width: 8px;
         height: 8px;
         border-radius: 50%;
@@ -368,7 +366,6 @@
             margin-bottom: .75rem;
         }
 
-        /* 2fr has a fixed min-width that exceeds 480px... */
         .info-grid {
             grid-template-columns: 1fr;
             gap: .75rem;
