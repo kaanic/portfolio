@@ -1,7 +1,7 @@
 <div class="main-section section">
     <div class="main-left-column">
         <div class="main-top-mobile">
-            <!-- mobile img. really bad approach, but works-->
+            <!-- mobile img -->
             <div class="main-img-mobile">
                 <img class="main-img" src="images/pxArt-compressed.png" alt="pixelart of Kaan">
             </div>
@@ -60,7 +60,7 @@
     .main-img {
         width: 100%;
         aspect-ratio: 1 / 1;
-        margin-left: 10px; /* collides with buttons on certain scenarios */
+        margin-left: 10px;
         height: auto;
         display: block;
 
@@ -187,7 +187,6 @@
             align-items: center;
         }
 
-        /* shows the hidden img meant for mobile */
         .main-img-mobile {
             display: block;
             flex-shrink: 0;
@@ -228,7 +227,6 @@
         }
     }
 
-    /* overkill tbh */
     @media (max-width: 400px) {
         .main-head-text {
             font-size: .5rem;
