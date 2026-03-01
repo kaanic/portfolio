@@ -33,7 +33,6 @@
     </div>
 
     <div class="skill-squares">
-        <!-- might need to refactor here -->
         {#each Array(4) as _, i} 
             <span 
                 class="skill-square {skill.proficiency}"
