@@ -1,2 +1,9 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+
+*.svelte diff=html
+*.js diff=javascript
+*.css diff=css
+
+*.png binary
+*.webp binary
+*.woff2 binary
