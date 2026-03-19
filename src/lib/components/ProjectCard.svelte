@@ -9,7 +9,7 @@
         <img 
             class="project-image" 
             src="{project.image}" 
-            alt="{project.title}" 
+            alt="Screenshot of {project.title}" 
         />
 
         <!-- status is converted to css class automatically -->
