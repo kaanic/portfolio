@@ -13,15 +13,6 @@
 
         colorIndex: i % 3
     }));
-
-    // getting css variable directly
-    // https://stackoverflow.com/questions/41725725/access-css-variable-from-javascript
-    const root = getComputedStyle(document.documentElement)
-    let colors = [
-        root.getPropertyValue("--accent1").trim(),
-        root.getPropertyValue("--accent2").trim(),
-        root.getPropertyValue("--accent3").trim()
-    ];
 </script>
 
 <div class="animated-bg">
@@ -30,8 +21,7 @@
     <div class="gradient-effect-bg"></div>
     <div class="pixels-bg">
         {#each pixels as pixel (pixel.id)}
-            <div class="pixel" style="
-                background-color: {colors[pixel.colorIndex]};
+            <div class="pixel color-{pixel.colorIndex}" style="
                 left: {pixel.left}%;
                 top: {pixel.top}%;
                 animation-delay: {pixel.delay}s;
@@ -43,6 +33,10 @@
 </div>
 
 <style>
+    .pixel.color-0 { background-color: var(--accent1); }
+    .pixel.color-1 { background-color: var(--accent2); }
+    .pixel.color-2 { background-color: var(--accent3); }
+
     .animated-bg {
         position: fixed;
         z-index: -100;
