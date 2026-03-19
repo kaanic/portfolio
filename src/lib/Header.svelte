@@ -1,6 +1,6 @@
 <script>
     import { Sun, Moon, Menu, X } from "lucide-svelte";
-    import { getIsDarkMode, toggleTheme } from "../themeStore.svelte";
+    import { getIsDarkMode, toggleTheme } from "$lib/themeStore.svelte";
 
     let isDarkMode = $derived(getIsDarkMode());
     let isMenuOpen = $state(false);

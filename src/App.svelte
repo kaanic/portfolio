@@ -1,6 +1,6 @@
 <script>
     import { onMount } from "svelte";
-    import { initializeTheme } from "./themeStore.svelte";
+    import { initializeTheme } from "$lib/themeStore.svelte";
     import AnimatedBackground from "./lib/components/AnimatedBackground.svelte";
 
     import Header from "./lib/Header.svelte";
