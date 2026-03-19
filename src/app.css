@@ -35,24 +35,9 @@
   /* section title attr */
   --sectionTitleFontSize: 1rem;
   
-  /* text colors */
-  --text: #e6e6e6;
-  --textMuted: #8b949e;
-  
-  /* accent colors */
-  --accent1: #ff4d94;
-  --accent2: #8b5cf6;
-  --accent3: #06b6d4;
-  
-  /* border colors */
-  --border: #30363d;
-  --borderAccent: #58a6ff;
-  
-  /* button colors */
-  --buttonPrimary: #238636;
-  --buttonPrimaryHover: #2ea043;
-  --buttonSecondary: #da3633;
-  --buttonSecondaryHover: #f85149;
+  /* -------------------------------------- */
+  /* colors are set on themeStore.svelte.js */
+  /* -------------------------------------- */
 
   /* transition */
   --transitionBase: all .3s ease;

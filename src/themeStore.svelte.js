@@ -13,9 +13,7 @@ export function initializeTheme() {
 
 function updateCSSVariables() {
     const root = document.documentElement;
-
-    // used AI here
-    // TODO: recheck and validate
+    
     if (isDarkMode) {
         root.style.setProperty('--bg', '#0d1117');
         root.style.setProperty('--cardBg', '#161b22');
@@ -30,7 +28,7 @@ function updateCSSVariables() {
         root.style.setProperty('--buttonPrimaryHover', '#2ea043');
         root.style.setProperty('--buttonSecondary', '#da3633');
         root.style.setProperty('--buttonSecondaryHover', '#f85149');
-    } else {
+    } else { // light mode
         root.style.setProperty('--bg', '#ffffff');
         root.style.setProperty('--cardBg', '#f6f8fa');
         root.style.setProperty('--text', '#1a1a1a');
