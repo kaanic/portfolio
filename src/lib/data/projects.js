@@ -29,7 +29,7 @@ export const projects = [
     {
         title: 'INTERACTIVE EVENT MAP',
         desc: 'A website design for a client where user can interact with the map',
-        tech: ['Javascript', 'HTML/CSS', 'OpenStreetMap'],
+        tech: ['JavaScript', 'HTML/CSS', 'OpenStreetMap'],
         status: 'COMPLETED',
         image: 'images/project/interactive-map.webp',
         demoUrl: null,
