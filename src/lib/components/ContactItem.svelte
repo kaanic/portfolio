@@ -35,7 +35,7 @@
         transition: var(--transitionBase);
     }
 
-    .contact-item-container:hover {
+    .contact-item-container:hover, .contact-item-container:focus-visible {
         background-color: var(--accent2);
         transform: translate(2px, 2px);
         box-shadow: 4px 4px color-mix(in srgb, var(--accent2), transparent 50%);
@@ -43,7 +43,10 @@
 
     .contact-item-container:hover .contact-type-icon,
     .contact-item-container:hover .contact-address,
-    .contact-item-container:hover .contact-type {
+    .contact-item-container:hover .contact-type,
+    .contact-item-container:focus-visible .contact-type-icon,
+    .contact-item-container:focus-visible .contact-address,
+    .contact-item-container:focus-visible .contact-type {
         color: #ffffff; /* might refactor */
     }
 
@@ -92,7 +95,7 @@
             flex: 1 1 calc(50% - .5rem);
         }
 
-        .contact-item-container:hover {
+        .contact-item-container:hover, .contact-item-container:focus-visible {
             transform: none;
         }
 
