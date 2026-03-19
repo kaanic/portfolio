@@ -62,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="about-status > about-info-box">
+            <div class="about-status about-info-box">
                 <h3 class="about-box-heading"><Zap size={16} aria-hidden="true"/>STATUS</h3>
                 <div class="about-status-list">
                     <div class="status-item">
