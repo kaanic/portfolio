@@ -47,6 +47,8 @@
         left: 0;
 
         pointer-events: none;
+        /* layout isolation, for optimization */
+        contain: strict; 
     }
 
     .grid-bg {
