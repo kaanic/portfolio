@@ -1,17 +1,14 @@
 <script>
     let { skill } = $props();
 
-    function getProficiencyLevel(proficiency) {
-        switch (proficiency) {
-            case 'expert': return 4;
-            case 'advanced': return 3;
-            case 'intermediate': return 2;
-            case 'beginner': return 1;
-            default: return 1;
-        }
+    const PROFICIENCY_LEVELS = {
+        expert: 4,
+        advanced: 3,
+        intermediate: 2,
+        beginner: 1,
     }
 
-    const level = $derived(getProficiencyLevel(skill.proficiency));
+    const level = $derived(PROFICIENCY_LEVELS[skill.proficiency] ?? 1);
 </script>
 
 <div class="skill-card {skill.proficiency}">
