@@ -1,9 +1,18 @@
-let isDarkMode = $state(true);
+let isDarkMode = $state(loadTheme());
+
+function loadTheme() {
+    const saved = localStorage.getItem('theme');
+    if (saved) return saved === 'dark';
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
 
 export function getIsDarkMode() { return isDarkMode; }
 
 export function toggleTheme() {
     isDarkMode = !isDarkMode;
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+
     updateCSSVariables();
 }
 
