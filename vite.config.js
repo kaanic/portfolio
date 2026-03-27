@@ -10,5 +10,13 @@ export default defineConfig({
     alias: {
       $lib: path.resolve(__dirname, './src/lib')
     }
+  },
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: ['./src/tests/setup.js'],
+    alias: {
+      $lib: path.resolve(__dirname, './src/lib')
+    }
   }
 })
