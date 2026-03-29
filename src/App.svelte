@@ -20,11 +20,13 @@
 <div class="container">
     <AnimatedBackground />
     <Header />
-    <Main />
-    <About />
-    <Stack />
-    <Projects />
-    <Career />
-    <Contact />
+    <main>
+        <Main />
+        <About />
+        <Stack />
+        <Projects />
+        <Career />
+        <Contact />
+    </main>
     <Footer />
 </div>
