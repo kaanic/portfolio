@@ -46,7 +46,7 @@ function updateCSSVariables() {
         root.style.setProperty('--textMuted', '#6e6e6e');
         root.style.setProperty('--accent1', '#d91e63');
         root.style.setProperty('--accent2', '#6d28d9');
-        root.style.setProperty('--accent3', '#0891b2');
+        root.style.setProperty('--accent3', '#0e7490');
         root.style.setProperty('--border', '#d0d7de');
         root.style.setProperty('--borderAccent', '#0969da');
         root.style.setProperty('--buttonPrimary', '#1a7f37');

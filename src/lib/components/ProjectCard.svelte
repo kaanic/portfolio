@@ -114,7 +114,7 @@
         border: 4px solid;
 
         font-size: .75rem;
-        color: var(--border);
+        color: #ffffff;
         box-shadow: 4px 4px rgba(0, 0, 0, .5); /* and this */
 
         z-index: 10;
