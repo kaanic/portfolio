@@ -49,7 +49,7 @@ jobs:
           node-version: 22
           cache: npm
 
-      - name: install deps
+      - name: install dependencies
         run: npm ci
 
       - name: run accessibility tests
@@ -62,10 +62,46 @@ jobs:
           name: accessibility-report
           path: test-results/
 
+  e2e:
+    name: e2e accessibility tests
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: checkout
+        uses: actions/checkout@v5
+      
+      - name: setup node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      
+      - name: install dependencies
+        run: npm ci 
+      
+      - name: install playwright browser
+        run: npx playwright install --with-deps chromium
+      
+      - name: download build artifact
+        uses: actions/download-artifact@v5
+        with:
+          name: dist
+          path: dist/
+
+      - name: run e2e accessibility tests
+        run: npx playwright test
+      
+      - name: upload playwright report
+        if: failure()
+        uses: actions/upload-artifact@v5
+        with:
+          name: playwright-report
+          path: playwright-report/
+      
   deploy:
     name: deploy
     runs-on: ubuntu-latest
-    needs: [build, test]
+    needs: [build, test, e2e]
     if: github.ref == 'refs/heads/main'
 
     permissions:
