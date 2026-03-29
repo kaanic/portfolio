@@ -1,6 +1,8 @@
 let isDarkMode = $state(loadTheme());
 
 function loadTheme() {
+    if (typeof window === 'undefined') return true;
+
     const saved = localStorage.getItem('theme');
     if (saved) return saved === 'dark';
 
