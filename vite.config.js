@@ -7,7 +7,6 @@ export default defineConfig(({ mode }) => ({
   plugins: [svelte(), cssInjectedByJsPlugin()],
   base: '/',
   resolve: {
-    conditions: mode === 'test' ? ['browser'] : [],
     alias: {
       $lib: path.resolve(__dirname, './src/lib')
     }
