@@ -4,7 +4,7 @@
 </script>
 
 <div class="contact-container section" id="contact">
-    <h1 class="h1-title"><span class="title-arrow">>></span> CONTACT.EXE</h1>
+    <h2 class="section-title"><span class="title-arrow">>></span> CONTACT.EXE</h2>
 
     <div class="contact-content">
         <p class="font-secondary">You can contact me through these methods any time of the day!</p>

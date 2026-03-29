@@ -4,7 +4,7 @@
 </script>
 
 <div class="projects-container section" id="projects">
-    <h1 class="h1-title"><span class="title-arrow">>></span> PROJECTS.ZIP</h1>
+    <h2 class="section-title"><span class="title-arrow">>></span> PROJECTS.ZIP</h2>
 
     <div class="projects-grid">
         {#each projects as project}

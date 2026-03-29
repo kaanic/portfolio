@@ -8,7 +8,7 @@
 
             <div class="title">
                 <span class="main-head-text">> INITIALIZING<span class="blink-anim">_</span></span>
-                <span class="main-title-name">KAANIC</span>
+                <h1 class="main-title-name">KAANIC</h1>
                 <span class="main-title-1">SOFTWARE</span>
                 <span class="main-title-2">DEVELOPER</span>
             </div>

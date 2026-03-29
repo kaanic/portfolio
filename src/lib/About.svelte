@@ -6,7 +6,7 @@
 </script>
 
 <div class="about-container section" id="about">
-    <h1 class="h1-title"><span class="title-arrow">>></span> ABOUT_ME.TXT</h1>
+    <h2 class="section-title"><span class="title-arrow">>></span> ABOUT_ME.TXT</h2>
     <div class="about-content">
         <div class="about-left-column about-info-box about-profile">
             <div class="about-profile-header">
@@ -28,7 +28,7 @@
             </div>
 
             <div class="mini-info-container">
-                <h2>> INFO_ABOUT_ME</h2>
+                <h3>> INFO_ABOUT_ME</h3>
                 <div class="info-grid">
                     {#each miniInfo as info}
                         <InfoItem 
@@ -141,7 +141,7 @@
         border-top: 2px solid var(--border);
     }
 
-    .mini-info-container > h2 {
+    .mini-info-container > h3 {
         font-size: .75rem;
         margin-bottom: 1rem;
 
@@ -361,7 +361,7 @@
             padding-top: 1rem;
         }
 
-        .mini-info-container > h2 {
+        .mini-info-container > h3 {
             font-size: .65rem;
             margin-bottom: .75rem;
         }

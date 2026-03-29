@@ -16,7 +16,7 @@
 </script>
 
 <div class="stack-container section" id="skills">
-    <h1 class="h1-title"><span class="title-arrow">>></span> SKILLS.DAT</h1>
+    <h2 class="section-title"><span class="title-arrow">>></span> SKILLS.DAT</h2>
 
     <div class="stack-content">
         <div class="category-header">
