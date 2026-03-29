@@ -16,6 +16,7 @@ export default defineConfig(({ mode }) => ({
     environment: 'jsdom',
     globals: true,
     setupFiles: ['./src/tests/setup.js'],
+    exclude: ['**/node_modules/**', '**/e2e/**'],
     alias: {
       $lib: path.resolve(__dirname, './src/lib')
     }
