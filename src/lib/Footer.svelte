@@ -1,6 +1,6 @@
-<div class="footer">
+<footer class="footer">
     <p>© 2026 Kaanic • All rights reserved.</p>
-</div>
+</footer>
 
 <style>
     .footer {
