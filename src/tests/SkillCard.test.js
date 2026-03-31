@@ -21,7 +21,7 @@ describe('SkillCard a11y', () => {
     it('has no a11y violations for each proficiency', async () => {
         for (const proficiency of ['expert', 'advanced', 'intermediate', 'beginner']) {
             const { container } = render(SkillCard, {
-                props: { skill: {...mock, prof: proficiency} }
+                props: { skill: {...mock, proficiency: proficiency} }
             });
 
             const result = await axe(container);
