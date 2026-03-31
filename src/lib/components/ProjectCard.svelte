@@ -79,7 +79,6 @@
         border: 5px solid var(--borderAccent);
         box-shadow: 8px 8px color-mix(in srgb, var(--borderAccent), transparent 80%);
 
-        cursor: pointer;
         transition: var(--transitionBase);
     }
 
