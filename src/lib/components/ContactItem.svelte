@@ -8,7 +8,7 @@
     }
 </script>
 
-<button class="contact-item-container" onclick={handleClick}>
+<button class="contact-item-container" onclick={handleClick} aria-label="Contact via {type}: {address}">
     <div class="contact-type-icon">
         <Icon size={24} aria-hidden="true"/>
     </div>
