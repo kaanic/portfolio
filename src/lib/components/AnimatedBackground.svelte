@@ -183,4 +183,8 @@
             transform: translate(16px, -12px) rotate(270deg);
         }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+        .pixel, .scanline-bg { animation: none; }
+    }
 </style>
