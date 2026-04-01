@@ -93,6 +93,8 @@ button {
   margin: 0 auto;
 
   contain: content;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
 }
 
 .section-title {
