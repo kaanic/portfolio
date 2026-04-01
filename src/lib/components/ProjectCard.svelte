@@ -28,11 +28,6 @@
 
     <div class="project-content">
         <div class="project-header">
-            <div class="color-squares">
-                <span class="color-square square-accent1"></span>
-                <span class="color-square square-accent2"></span>
-                <span class="color-square square-accent3"></span>
-            </div>
             <h3 class="project-title">{project.title}</h3>
             <Code size={16} class="code-icon" aria-hidden="true"/>
         </div>
@@ -76,15 +71,15 @@
         position: relative;
 
         background-color: var(--cardBg);
-        border: 5px solid var(--borderAccent);
-        box-shadow: 8px 8px color-mix(in srgb, var(--borderAccent), transparent 80%);
+        border: 5px solid var(--border);
+        box-shadow: 8px 8px color-mix(in srgb, var(--border), transparent 80%);
 
         transition: var(--transitionBase);
     }
 
     .project-card:hover {
         transform: translate(2px, 2px);
-        box-shadow: 6px 6px color-mix(in srgb, var(--borderAccent), transparent 80%);
+        box-shadow: 6px 6px color-mix(in srgb, var(--border), transparent 80%);
     }
 
     .project-image-container {
@@ -182,42 +177,15 @@
         border-bottom: 2px solid var(--border);
     }
 
-    .color-squares {
-        display: flex;
-
-        gap: .25rem;
-    }
-
-    .color-square {
-        width: 12px;
-        height: 12px;
-        border: 2px solid;
-    }
-
-    .square-accent1 {
-        background-color: var(--accent1);
-        border-color: var(--accent1);
-    }
-
-    .square-accent2 {
-        background-color: var(--accent2);
-        border-color: var(--accent2);
-    }
-
-    .square-accent3 {
-        background-color: var(--accent3);
-        border-color: var(--accent3);
-    }
-
     .project-title {
         flex: 1;
         
         font-size: .75rem;
-        color: var(--accent3);
+        color: var(--text);
     }
 
     .project-content :global(.code-icon) {
-        color: var(--accent1);
+        color: var(--textMuted);
 
         flex-shrink: 0;
     }
@@ -238,10 +206,10 @@
 
     .tech-pill {
         padding: .5rem .75rem;
-        border: 2px solid var(--accent2);
+        border: 2px solid var(--border);
 
         font-size: .75rem;
-        color: var(--accent2);
+        color: var(--textMuted);
         background-color: var(--bg);
     }
 
@@ -280,14 +248,14 @@
     }
 
     .btn-demo {
-        border-color: var(--accent1);
-        color: var(--accent1);
-        box-shadow: 4px 4px color-mix(in srgb, var(--accent1), transparent 50%);
+        border-color: var(--border);
+        color: var(--textMuted);
+        box-shadow: 4px 4px color-mix(in srgb, var(--border), transparent 50%);
     }
 
     .btn-demo:hover {
         transform: translate(1px, 1px);
-        box-shadow: 3px 3px color-mix(in srgb, var(--accent1), transparent 50%);
+        box-shadow: 3px 3px color-mix(in srgb, var(--border), transparent 50%);
     }
 
     .btn-code {
@@ -324,11 +292,11 @@
         }
 
         .btn-demo:hover {
-            box-shadow: 4px 4px color-mix(in srgb, var(--accent1), transparent 50%);
+            box-shadow: 4px 4px color-mix(in srgb, var(--border), transparent 50%);
         }
 
         .project-card:hover {
-            box-shadow: 8px 8px color-mix(in srgb, var(--borderAccent), transparent 80%);
+            box-shadow: 8px 8px color-mix(in srgb, var(--border), transparent 80%);
 
         }
     }
@@ -377,11 +345,11 @@
 
         .project-card {
             border-width: 3px;
-            box-shadow: 5px 5px color-mix(in srgb, var(--borderAccent), transparent 80%);
+            box-shadow: 5px 5px color-mix(in srgb, var(--border), transparent 80%);
         }
 
         .project-card:hover {
-            box-shadow: 4px 4px color-mix(in srgb, var(--borderAccent), transparent 80%);
+            box-shadow: 4px 4px color-mix(in srgb, var(--border), transparent 80%);
         }
     }
 </style>
