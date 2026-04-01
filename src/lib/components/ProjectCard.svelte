@@ -9,7 +9,8 @@
         <img 
             class="project-image" 
             src="{project.image}" 
-            alt="Screenshot of {project.title}" 
+            alt="Screenshot of {project.title}"
+            loading="lazy"
         />
 
         <!-- status is converted to css class automatically -->
