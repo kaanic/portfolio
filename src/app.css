@@ -91,6 +91,8 @@ button {
   padding: 4rem 0;
   max-width: var(--contentMaxWidth);
   margin: 0 auto;
+
+  contain: content;
 }
 
 .section-title {
