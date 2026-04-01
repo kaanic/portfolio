@@ -151,6 +151,8 @@
         opacity: var(--bgPixelOpacity);
 
         animation: float ease-in-out infinite;
+        
+        will-change: transform;
     }
 
     @keyframes scanline {
