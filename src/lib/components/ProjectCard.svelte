@@ -21,9 +21,6 @@
 
         <!-- tube tv lines -->
         <div class="scanline-layer"></div>
-
-        <!-- tube tv glow -->
-        <div class="glow-layer"></div>
     </div>
 
     <div class="project-content">
@@ -139,25 +136,6 @@
         );
 
         pointer-events: none;
-    }
-
-    .glow-layer {
-        position: absolute;
-        inset: 0;
-        
-        opacity: 0;
-        background: radial-gradient(
-            circle at center,
-            color-mix(in srgb, var(--accent2), transparent 60%),
-            transparent 70%
-        );
-        transition: var(--transitionBase);
-
-        pointer-events: none;
-    }
-
-    .project-card:hover .glow-layer {
-        opacity: .3;
     }
 
     .project-content {
