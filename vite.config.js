@@ -1,13 +1,12 @@
-import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
-import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
-import path from 'path'
+import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
+import path from 'path';
 
 export default defineConfig(({ mode }) => {
   const isTest = mode === 'test';
   
   return {
-    plugins: [svelte(), cssInjectedByJsPlugin()],
+    plugins: [svelte()],
     base: '/',
     resolve: {
       conditions: isTest ? ['browser'] : undefined,
