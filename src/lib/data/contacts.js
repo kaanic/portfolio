@@ -4,8 +4,8 @@ export const contacts = [
     {
         icon: Mail,
         type: "EMAIL",
-        address: "kaanic1337@gmail.com",
-        url: "mailto:kaanic1337@gmail.com"
+        address: ['kaanic1337', 'gmail.com'].join('@'),
+        url: ['mailto:kaanic1337', 'gmail.com'].join('@')
     },
     {
         icon: Linkedin,
