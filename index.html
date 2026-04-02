@@ -18,8 +18,16 @@
     <!-- preload -->
     <link rel="preload" href="/fonts/PressStart2P.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/RobotoMono.woff2" as="font" type="font/woff2" crossorigin />
-    <script type="module" crossorigin src="/assets/index-Dd8rwwhY.js"></script>
-    
+  
+    <script>
+      (function() {
+        var s = localStorage.getItem('theme');
+        var d = s ? s === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', d ? 'dark' : 'light');
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-DRuPXjbV.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CdrNmzAG.css">
   </head>
   <body>
     <div id="app"></div>
