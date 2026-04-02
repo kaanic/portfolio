@@ -19,6 +19,25 @@
     <link rel="preload" href="/fonts/PressStart2P.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/RobotoMono.woff2" as="font" type="font/woff2" crossorigin />
   
+    <!-- structured data -->
+    <!-- https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=en -->
+    <!-- https://schema.org/Person -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Kaan Özkilic",
+        "alternateName": "Kaanic"
+        "url": "https://kaanic.dev",
+        "jobTitle": "Software Developer",
+        "sameAs": [
+          "https://github.com/kaanic",
+          "https://www.linkedin.com/in/kaan-ozkilic-8830373ab/"
+        ]
+      }
+    </script>
+
+    <!-- prevent fouc -->
     <script>
       (function() {
         var s = localStorage.getItem('theme');
@@ -26,8 +45,8 @@
         document.documentElement.setAttribute('data-theme', d ? 'dark' : 'light');
       })();
     </script>
-    <script type="module" crossorigin src="/assets/index-DRuPXjbV.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CdrNmzAG.css">
+    <script type="module" crossorigin src="/assets/index-D7y7G3N1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Bxmo854V.css">
   </head>
   <body>
     <div id="app"></div>
