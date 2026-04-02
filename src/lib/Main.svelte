@@ -87,7 +87,8 @@
 
     .main-title-name {
         font-size: 2.5rem;
-        line-height: 1.2;
+        font-weight: 100;
+        line-height: 1.1;
         margin: .5rem 0;
 
         color: var(--text);
@@ -227,7 +228,7 @@
         }
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 425px) {
         .main-head-text {
             font-size: .5rem;
         }
