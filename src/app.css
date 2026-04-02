@@ -20,10 +20,6 @@
   /* content max width, to use on each section component */
   --contentMaxWidth: min(90%, 1120px);
 
-  /* background colors */
-  --bg: #0d1117;
-  --cardBg: #161b22;
-
   /* needed for gradient channel */
   /* hex value cannot convert to rgbA so color-mix() is used */
   --bgTransparencyRatio: 95%; 
@@ -43,6 +39,38 @@
   --transitionBase: all .3s ease;
   --transitionColor: color .3s ease;
   --transitionOpacity: opacity .3s ease;
+}
+
+[data-theme="dark"] {
+  --bg: #0d1117;
+  --cardBg: #161b22;
+  --text: #e6e6e6;
+  --textMuted: #8b949e;
+  --accent1: #ff4d94;
+  --accent2: #8b5cf6;
+  --accent3: #06b6d4;
+  --border: #30363d;
+  --borderAccent: #58a6ff;
+  --buttonPrimary: #238636;
+  --buttonPrimaryHover: #2ea043;
+  --buttonSecondary: #da3633;
+  --buttonSecondaryHover: #f85149;
+}
+
+[data-theme="light"] {
+  --bg: #ffffff;
+  --cardBg: #f6f8fa;
+  --text: #1a1a1a;
+  --textMuted: #6e6e6e;
+  --accent1: #d91e63;
+  --accent2: #6d28d9;
+  --accent3: #0e7490;
+  --border: #d0d7de;
+  --borderAccent: #0969da;
+  --buttonPrimary: #1a7f37;
+  --buttonPrimaryHover: #228c49;
+  --buttonSecondary: #b62324;
+  --buttonSecondaryHover: #d1242f;
 }
 
 *, *::before, *::after {
