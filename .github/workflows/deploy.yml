@@ -58,8 +58,8 @@ jobs:
       - name: run security audit
         run: npm audit --audit-level=high
 
-  test:
-    name: accessibility tests
+  axe:
+    name: axe-core tests
     runs-on: ubuntu-latest
     needs: build
 
@@ -159,7 +159,7 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
-    needs: [build, audit, test, lighthouse, e2e]
+    needs: [build, audit, axe, lighthouse, e2e]
     if: github.ref == 'refs/heads/main'
 
     permissions:
