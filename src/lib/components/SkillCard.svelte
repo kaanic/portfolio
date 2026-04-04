@@ -45,8 +45,6 @@
         background-color: var(--bg);
 
         transition: var(--transitionBase);
-        cursor: pointer;
-
     }
 
     .skill-card.expert {
@@ -67,10 +65,6 @@
     .skill-card.beginner {
         border-color: var(--textMuted);
         box-shadow: 4px 4px 0px 0px color-mix(in srgb, var(--textMuted), transparent 50%);
-    }
-
-    .skill-card:hover {
-        transform: translate(1px, 1px);
     }
 
     .skill-header {
